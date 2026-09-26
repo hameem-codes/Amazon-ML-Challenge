@@ -1,0 +1,232 @@
+{
+  "benchmark": {
+    "total_s1": 500,
+    "total_targets": 1434993,
+    "reference_true_pairs": 4191,
+    "raw_candidates_total": 216808077,
+    "production_fingerprint": 8223
+  },
+  "scale_inspection": [
+    {
+      "legacy_min": 200.0,
+      "legacy_max": 280.0,
+      "legacy_mean": 214.4945526123047,
+      "similarity_sum_max": 10.481871604919434
+    },
+    {
+      "legacy_min": 200.0,
+      "legacy_max": 350.0,
+      "legacy_mean": 200.25900268554688,
+      "similarity_sum_max": 11.485244750976562
+    },
+    {
+      "legacy_min": 130.0,
+      "legacy_max": 350.0,
+      "legacy_mean": 132.60708618164062,
+      "similarity_sum_max": 11.040491104125977
+    },
+    {
+      "legacy_min": 130.0,
+      "legacy_max": 280.0,
+      "legacy_mean": 131.5792236328125,
+      "similarity_sum_max": 11.912644386291504
+    },
+    {
+      "legacy_min": 200.0,
+      "legacy_max": 290.0,
+      "legacy_mean": 200.61143493652344,
+      "similarity_sum_max": 9.99653148651123
+    }
+  ],
+  "stage_results": [
+    {
+      "stage": 0,
+      "signals": "Legacy",
+      "recall_400": 82.7965,
+      "recall_300": 80.4581,
+      "recall_500": 84.2042,
+      "true_retained": 3470,
+      "true_lost": 721,
+      "delta_vs_previous": "\u2014",
+      "delta_vs_baseline": "\u2014",
+      "runtime_s": 1.07,
+      "peak_ram_mb": 2927.5,
+      "candidates_per_s1": 400.0,
+      "cap_hits": 500
+    },
+    {
+      "stage": 1,
+      "signals": "+ Name Jaccard",
+      "recall_400": 97.4708,
+      "recall_300": 92.6271,
+      "recall_500": 98.4729,
+      "true_retained": 4085,
+      "true_lost": 106,
+      "delta_vs_previous": "+615",
+      "delta_vs_baseline": "+615",
+      "runtime_s": 1.13,
+      "peak_ram_mb": 2927.5,
+      "candidates_per_s1": 400.0,
+      "cap_hits": 500
+    },
+    {
+      "stage": 2,
+      "signals": "+ Name JW",
+      "recall_400": 97.4708,
+      "recall_300": 92.6271,
+      "recall_500": 98.4729,
+      "true_retained": 4085,
+      "true_lost": 106,
+      "delta_vs_previous": "+0",
+      "delta_vs_baseline": "+615",
+      "runtime_s": 1.28,
+      "peak_ram_mb": 2927.5,
+      "candidates_per_s1": 400.0,
+      "cap_hits": 500
+    },
+    {
+      "stage": 3,
+      "signals": "+ Name TF-IDF",
+      "recall_400": 97.4708,
+      "recall_300": 92.6271,
+      "recall_500": 98.4729,
+      "true_retained": 4085,
+      "true_lost": 106,
+      "delta_vs_previous": "+0",
+      "delta_vs_baseline": "+615",
+      "runtime_s": 1.32,
+      "peak_ram_mb": 2927.5,
+      "candidates_per_s1": 400.0,
+      "cap_hits": 500
+    },
+    {
+      "stage": 4,
+      "signals": "+ Address Jaccard",
+      "recall_400": 97.2799,
+      "recall_300": 92.6271,
+      "recall_500": 98.4729,
+      "true_retained": 4077,
+      "true_lost": 114,
+      "delta_vs_previous": "-8",
+      "delta_vs_baseline": "+607",
+      "runtime_s": 1.33,
+      "peak_ram_mb": 2927.5,
+      "candidates_per_s1": 400.0,
+      "cap_hits": 500
+    },
+    {
+      "stage": 5,
+      "signals": "+ Address TF-IDF",
+      "recall_400": 94.1541,
+      "recall_300": 91.2431,
+      "recall_500": 97.256,
+      "true_retained": 3946,
+      "true_lost": 245,
+      "delta_vs_previous": "-131",
+      "delta_vs_baseline": "+476",
+      "runtime_s": 1.34,
+      "peak_ram_mb": 2927.5,
+      "candidates_per_s1": 400.0,
+      "cap_hits": 500
+    },
+    {
+      "stage": 6,
+      "signals": "+ Country",
+      "recall_400": 94.1541,
+      "recall_300": 91.2431,
+      "recall_500": 97.256,
+      "true_retained": 3946,
+      "true_lost": 245,
+      "delta_vs_previous": "+0",
+      "delta_vs_baseline": "+476",
+      "runtime_s": 1.33,
+      "peak_ram_mb": 2927.5,
+      "candidates_per_s1": 400.0,
+      "cap_hits": 500
+    },
+    {
+      "stage": 7,
+      "signals": "+ Blocking Count",
+      "recall_400": 94.1541,
+      "recall_300": 91.2431,
+      "recall_500": 97.256,
+      "true_retained": 3946,
+      "true_lost": 245,
+      "delta_vs_previous": "+0",
+      "delta_vs_baseline": "+476",
+      "runtime_s": 1.34,
+      "peak_ram_mb": 2927.5,
+      "candidates_per_s1": 400.0,
+      "cap_hits": 500
+    },
+    {
+      "stage": 8,
+      "signals": "+ Prefix",
+      "recall_400": 94.1541,
+      "recall_300": 91.2431,
+      "recall_500": 97.256,
+      "true_retained": 3946,
+      "true_lost": 245,
+      "delta_vs_previous": "+0",
+      "delta_vs_baseline": "+476",
+      "runtime_s": 1.32,
+      "peak_ram_mb": 2927.5,
+      "candidates_per_s1": 400.0,
+      "cap_hits": 500
+    },
+    {
+      "stage": 9,
+      "signals": "+ Length",
+      "recall_400": 97.2083,
+      "recall_300": 92.5555,
+      "recall_500": 98.4729,
+      "true_retained": 4074,
+      "true_lost": 117,
+      "delta_vs_previous": "+128",
+      "delta_vs_baseline": "+604",
+      "runtime_s": 1.33,
+      "peak_ram_mb": 2927.5,
+      "candidates_per_s1": 400.0,
+      "cap_hits": 500
+    }
+  ],
+  "best_stage": {
+    "stage": 1,
+    "signals": "+ Name Jaccard",
+    "recall_400": 97.4708,
+    "recall_300": 92.6271,
+    "recall_500": 98.4729,
+    "true_retained": 4085,
+    "true_lost": 106,
+    "delta_vs_previous": "+615",
+    "delta_vs_baseline": "+615",
+    "runtime_s": 1.13,
+    "peak_ram_mb": 2927.5,
+    "candidates_per_s1": 400.0,
+    "cap_hits": 500
+  },
+  "baseline_metrics": {
+    "macro_f0_5": 0.317727,
+    "macro_precision": 0.32602,
+    "macro_recall": 0.7027,
+    "tp": 1497,
+    "fp": 3995,
+    "fn": 2694,
+    "singleton_tp": 111,
+    "multi_match_tp": 1386
+  },
+  "downstream_metrics_best_stage": {
+    "macro_f0_5": 0.264236,
+    "macro_precision": 0.264319,
+    "macro_recall": 0.712152,
+    "pairwise_precision": 0.188493,
+    "pairwise_recall": 0.455738,
+    "tp": 1910,
+    "fp": 8223,
+    "fn": 2281,
+    "predicted_pairs": 10133,
+    "singleton_tp": 112,
+    "multi_match_tp": 1798,
+    "zero_match_with_predictions": 94
+  }
+}

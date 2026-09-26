@@ -1,0 +1,311 @@
+{
+  "benchmark_summary": {
+    "s1_count": 500,
+    "target_count": 1434993,
+    "config_fingerprint": 74837,
+    "locked_model": "models/xgboost_entity_resolution_phase5_configA.json",
+    "locked_threshold": 0.91,
+    "reference_true_pairs": 4191,
+    "ground_truth_zero_match_s1_count": 94
+  },
+  "configurations": {
+    "CAP-400": {
+      "config": "CAP-400",
+      "cap": 400,
+      "raw_candidates": 95603816,
+      "raw_candidate_recall": 1.0,
+      "post_cap_candidates": 200000,
+      "average_candidates_per_s1": 400.0,
+      "median_candidates_per_s1": 400.0,
+      "max_candidates_per_s1": 400,
+      "post_cap_candidate_recall": 0.827965,
+      "true_pairs_retained_in_candidates": 3470,
+      "true_pairs_lost_in_candidates": 721,
+      "macro_f0_5": 0.077903,
+      "macro_precision": 0.067123,
+      "macro_recall": 0.863008,
+      "tp": 2601,
+      "fp": 32930,
+      "fn": 1590,
+      "pairwise_precision": 0.073204,
+      "pairwise_recall": 0.620616,
+      "pairwise_f0_5": 0.088884,
+      "predicted_matched_s1_count": 500,
+      "predicted_zero_match_s1_count": 0,
+      "ground_truth_zero_match_s1_count": 94,
+      "blocking_runtime_s": 413.31,
+      "feature_runtime_s": 38.17,
+      "model_runtime_s": 2.27,
+      "total_runtime_s": 455.16,
+      "throughput_s1_per_sec": 1.1,
+      "peak_rss_mb": 1253.7,
+      "delta_macro_f0_5": 0.0,
+      "delta_macro_precision": 0.0,
+      "delta_macro_recall": 0.0,
+      "additional_candidates": 0,
+      "additional_runtime_s": 0.0,
+      "additional_true_pairs": 0,
+      "additional_false_positives": 0
+    },
+    "CAP-600": {
+      "config": "CAP-600",
+      "cap": 600,
+      "raw_candidates": 95603816,
+      "raw_candidate_recall": 1.0,
+      "post_cap_candidates": 300000,
+      "average_candidates_per_s1": 600.0,
+      "median_candidates_per_s1": 600.0,
+      "max_candidates_per_s1": 600,
+      "post_cap_candidate_recall": 0.854927,
+      "true_pairs_retained_in_candidates": 3583,
+      "true_pairs_lost_in_candidates": 608,
+      "macro_f0_5": 0.061219,
+      "macro_precision": 0.052252,
+      "macro_recall": 0.86407,
+      "tp": 2690,
+      "fp": 47765,
+      "fn": 1501,
+      "pairwise_precision": 0.053315,
+      "pairwise_recall": 0.641852,
+      "pairwise_f0_5": 0.065288,
+      "predicted_matched_s1_count": 500,
+      "predicted_zero_match_s1_count": 0,
+      "ground_truth_zero_match_s1_count": 94,
+      "blocking_runtime_s": 332.12,
+      "feature_runtime_s": 74.59,
+      "model_runtime_s": 2.86,
+      "total_runtime_s": 411.46,
+      "throughput_s1_per_sec": 1.22,
+      "peak_rss_mb": 1347.2,
+      "delta_macro_f0_5": -0.016684,
+      "delta_macro_precision": -0.014871,
+      "delta_macro_recall": 0.001062,
+      "additional_candidates": 100000,
+      "additional_runtime_s": -43.7,
+      "additional_true_pairs": 89,
+      "additional_false_positives": 14835
+    },
+    "CAP-800": {
+      "config": "CAP-800",
+      "cap": 800,
+      "raw_candidates": 95603816,
+      "raw_candidate_recall": 1.0,
+      "post_cap_candidates": 400000,
+      "average_candidates_per_s1": 800.0,
+      "median_candidates_per_s1": 800.0,
+      "max_candidates_per_s1": 800,
+      "post_cap_candidate_recall": 0.879981,
+      "true_pairs_retained_in_candidates": 3688,
+      "true_pairs_lost_in_candidates": 503,
+      "macro_f0_5": 0.051895,
+      "macro_precision": 0.04401,
+      "macro_recall": 0.864503,
+      "tp": 2774,
+      "fp": 62243,
+      "fn": 1417,
+      "pairwise_precision": 0.042666,
+      "pairwise_recall": 0.661895,
+      "pairwise_f0_5": 0.052486,
+      "predicted_matched_s1_count": 500,
+      "predicted_zero_match_s1_count": 0,
+      "ground_truth_zero_match_s1_count": 94,
+      "blocking_runtime_s": 279.45,
+      "feature_runtime_s": 69.82,
+      "model_runtime_s": 3.24,
+      "total_runtime_s": 354.27,
+      "throughput_s1_per_sec": 1.41,
+      "peak_rss_mb": 1439.1,
+      "delta_macro_f0_5": -0.026008,
+      "delta_macro_precision": -0.023113,
+      "delta_macro_recall": 0.001495,
+      "additional_candidates": 200000,
+      "additional_runtime_s": -100.89,
+      "additional_true_pairs": 173,
+      "additional_false_positives": 29313
+    },
+    "CAP-1000": {
+      "config": "CAP-1000",
+      "cap": 1000,
+      "raw_candidates": 95603816,
+      "raw_candidate_recall": 1.0,
+      "post_cap_candidates": 500000,
+      "average_candidates_per_s1": 1000.0,
+      "median_candidates_per_s1": 1000.0,
+      "max_candidates_per_s1": 1000,
+      "post_cap_candidate_recall": 0.90575,
+      "true_pairs_retained_in_candidates": 3796,
+      "true_pairs_lost_in_candidates": 395,
+      "macro_f0_5": 0.046087,
+      "macro_precision": 0.038889,
+      "macro_recall": 0.865386,
+      "tp": 2863,
+      "fp": 74837,
+      "fn": 1328,
+      "pairwise_precision": 0.036847,
+      "pairwise_recall": 0.683131,
+      "pairwise_f0_5": 0.045446,
+      "predicted_matched_s1_count": 500,
+      "predicted_zero_match_s1_count": 0,
+      "ground_truth_zero_match_s1_count": 94,
+      "blocking_runtime_s": 254.18,
+      "feature_runtime_s": 87.61,
+      "model_runtime_s": 3.15,
+      "total_runtime_s": 347.06,
+      "throughput_s1_per_sec": 1.44,
+      "peak_rss_mb": 1532.9,
+      "delta_macro_f0_5": -0.031816,
+      "delta_macro_precision": -0.028234,
+      "delta_macro_recall": 0.002378,
+      "additional_candidates": 300000,
+      "additional_runtime_s": -108.1,
+      "additional_true_pairs": 262,
+      "additional_false_positives": 41907
+    }
+  },
+  "prediction_differences": {
+    "CAP-600_vs_CAP-400": {
+      "new_predictions_count": 14924,
+      "dropped_predictions_count": 0,
+      "new_predictions_sample": [
+        [
+          "S1-454834135",
+          "S3-137933123"
+        ],
+        [
+          "S1-336954819",
+          "S2-22935416"
+        ],
+        [
+          "S1-402129124",
+          "S2-63785542"
+        ],
+        [
+          "S1-745780830",
+          "S2-219500542"
+        ],
+        [
+          "S1-807531920",
+          "S3-107357305"
+        ],
+        [
+          "S1-705603372",
+          "S3-453602113"
+        ],
+        [
+          "S1-341063793",
+          "S2-209760502"
+        ],
+        [
+          "S1-644418417",
+          "S2-278720346"
+        ],
+        [
+          "S1-533056362",
+          "S2-799646853"
+        ],
+        [
+          "S1-341063793",
+          "S2-219201866"
+        ]
+      ],
+      "new_predictions_tp_count": 89,
+      "new_predictions_fp_count": 14835
+    },
+    "CAP-800_vs_CAP-400": {
+      "new_predictions_count": 29486,
+      "dropped_predictions_count": 0,
+      "new_predictions_sample": [
+        [
+          "S1-454834135",
+          "S3-137933123"
+        ],
+        [
+          "S1-336954819",
+          "S2-22935416"
+        ],
+        [
+          "S1-657028371",
+          "S3-233273070"
+        ],
+        [
+          "S1-745780830",
+          "S2-219500542"
+        ],
+        [
+          "S1-634708855",
+          "S3-654138329"
+        ],
+        [
+          "S1-705603372",
+          "S3-453602113"
+        ],
+        [
+          "S1-83258310",
+          "S3-522801120"
+        ],
+        [
+          "S1-997853473",
+          "S2-392280702"
+        ],
+        [
+          "S1-278899619",
+          "S3-518477746"
+        ],
+        [
+          "S1-533056362",
+          "S2-799646853"
+        ]
+      ],
+      "new_predictions_tp_count": 173,
+      "new_predictions_fp_count": 29313
+    },
+    "CAP-1000_vs_CAP-400": {
+      "new_predictions_count": 42169,
+      "dropped_predictions_count": 0,
+      "new_predictions_sample": [
+        [
+          "S1-454834135",
+          "S3-137933123"
+        ],
+        [
+          "S1-336954819",
+          "S2-22935416"
+        ],
+        [
+          "S1-927557769",
+          "S2-424998345"
+        ],
+        [
+          "S1-657028371",
+          "S3-233273070"
+        ],
+        [
+          "S1-745780830",
+          "S2-219500542"
+        ],
+        [
+          "S1-634708855",
+          "S3-654138329"
+        ],
+        [
+          "S1-705603372",
+          "S3-453602113"
+        ],
+        [
+          "S1-83258310",
+          "S3-522801120"
+        ],
+        [
+          "S1-997853473",
+          "S2-392280702"
+        ],
+        [
+          "S1-278899619",
+          "S3-518477746"
+        ]
+      ],
+      "new_predictions_tp_count": 262,
+      "new_predictions_fp_count": 41907
+    }
+  }
+}

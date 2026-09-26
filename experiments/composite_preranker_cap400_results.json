@@ -1,0 +1,203 @@
+{
+  "benchmark_summary": {
+    "s1_count": 500,
+    "target_count": 1434993,
+    "config_fingerprint": 75428,
+    "locked_model": "models/xgboost_entity_resolution_phase5_configA.json",
+    "locked_threshold": 0.91,
+    "reference_true_pairs": 4191,
+    "ground_truth_zero_match_s1_count": 94
+  },
+  "baseline_cap400": {
+    "config": "CAP-400 (Legacy Evidence Ranker)",
+    "cap": 400,
+    "raw_candidates": 95603816,
+    "raw_candidate_recall": 1.0,
+    "post_cap_candidates": 200000,
+    "post_cap_candidate_recall": 0.827965,
+    "true_pairs_retained_in_candidates": 3470,
+    "true_pairs_lost_in_candidates": 721,
+    "macro_f0_5": 0.077903,
+    "macro_precision": 0.067123,
+    "macro_recall": 0.863008,
+    "tp": 2601,
+    "fp": 32930,
+    "fn": 1590,
+    "pairwise_precision": 0.073204,
+    "pairwise_recall": 0.620616,
+    "pairwise_f0_5": 0.088884,
+    "predicted_matched_s1_count": 500,
+    "predicted_zero_match_s1_count": 0,
+    "total_runtime_s": 320.49,
+    "peak_rss_mb": 1252.5
+  },
+  "composite_preranker_cap400": {
+    "config": "COMPOSITE-PRERANKER-CAP400",
+    "cap": 400,
+    "raw_candidates": 95603816,
+    "raw_candidate_recall": 1.0,
+    "post_ranker_candidates": 200000,
+    "post_ranker_candidate_recall": 0.836316,
+    "average_candidates_per_s1": 400.0,
+    "median_candidates_per_s1": 400.0,
+    "max_candidates_per_s1": 400,
+    "true_pairs_retained": 3505,
+    "true_pairs_lost": 686,
+    "macro_f0_5": 0.038058,
+    "macro_precision": 0.032298,
+    "macro_recall": 0.860956,
+    "tp": 2680,
+    "fp": 75428,
+    "fn": 1511,
+    "pairwise_precision": 0.034311,
+    "pairwise_recall": 0.639466,
+    "pairwise_f0_5": 0.042322,
+    "predicted_matched_s1_count": 500,
+    "predicted_zero_match_s1_count": 0,
+    "ground_truth_zero_match_s1_count": 94,
+    "blocking_runtime_s": 915.12,
+    "feature_runtime_s": 41.09,
+    "model_runtime_s": 1.89,
+    "total_runtime_s": 959.17,
+    "throughput_s1_per_sec": 0.52,
+    "peak_rss_mb": 1268.9,
+    "delta_macro_f0_5": -0.039845,
+    "delta_macro_precision": -0.034825,
+    "delta_macro_recall": -0.002052,
+    "delta_tp": 79,
+    "delta_fp": 42498,
+    "delta_fn": -79
+  },
+  "prediction_differences": {
+    "new_predictions_count": 50601,
+    "new_predictions_tp_count": 224,
+    "new_predictions_fp_count": 50377,
+    "dropped_predictions_count": 8024,
+    "dropped_predictions_tp_count": 145,
+    "dropped_predictions_fp_count": 7879,
+    "new_predictions_sample": [
+      [
+        "S1-100460794",
+        "S2-200283054"
+      ],
+      [
+        "S1-100460794",
+        "S2-205210725"
+      ],
+      [
+        "S1-100460794",
+        "S2-687363653"
+      ],
+      [
+        "S1-100460794",
+        "S2-760533344"
+      ],
+      [
+        "S1-100460794",
+        "S2-794310485"
+      ],
+      [
+        "S1-100460794",
+        "S2-80301629"
+      ],
+      [
+        "S1-100460794",
+        "S2-892923706"
+      ],
+      [
+        "S1-100460794",
+        "S3-206620907"
+      ],
+      [
+        "S1-100460794",
+        "S3-241312253"
+      ],
+      [
+        "S1-100460794",
+        "S3-249342627"
+      ],
+      [
+        "S1-100460794",
+        "S3-39738424"
+      ],
+      [
+        "S1-100460794",
+        "S3-471575536"
+      ],
+      [
+        "S1-100460794",
+        "S3-491595713"
+      ],
+      [
+        "S1-100460794",
+        "S3-49270966"
+      ],
+      [
+        "S1-100460794",
+        "S3-518174802"
+      ]
+    ],
+    "dropped_predictions_sample": [
+      [
+        "S1-100460794",
+        "S2-179945432"
+      ],
+      [
+        "S1-100460794",
+        "S2-984344742"
+      ],
+      [
+        "S1-100460794",
+        "S3-215650749"
+      ],
+      [
+        "S1-100460794",
+        "S3-674775720"
+      ],
+      [
+        "S1-100460794",
+        "S3-721710934"
+      ],
+      [
+        "S1-100460794",
+        "S3-776599475"
+      ],
+      [
+        "S1-100460794",
+        "S3-786115527"
+      ],
+      [
+        "S1-100460794",
+        "S3-806443423"
+      ],
+      [
+        "S1-100460794",
+        "S3-813185271"
+      ],
+      [
+        "S1-100460794",
+        "S3-930582127"
+      ],
+      [
+        "S1-114167540",
+        "S2-154304025"
+      ],
+      [
+        "S1-114167540",
+        "S2-191170748"
+      ],
+      [
+        "S1-116213562",
+        "S2-112655101"
+      ],
+      [
+        "S1-116213562",
+        "S3-842636461"
+      ],
+      [
+        "S1-118654142",
+        "S2-112365657"
+      ]
+    ]
+  }
+}
