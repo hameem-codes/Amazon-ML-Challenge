@@ -1,0 +1,19 @@
+{
+  "s1_count": 500,
+  "target_count": 1434993,
+  "runtime_seconds": 410.95,
+  "throughput_s1_per_sec": 1.22,
+  "peak_rss_mb": 978.4,
+  "engine_rss_mb": 926.8,
+  "raw_candidate_count": 216808077,
+  "post_cap_candidate_count": 200000,
+  "candidates_per_s1": 400.0,
+  "median_candidates_per_s1": 400.0,
+  "maximum_candidates_per_s1": 400,
+  "zero_candidate_s1_count": 0,
+  "overflowing_s1_count": 500,
+  "chunk_size": 25,
+  "candidate_cap": 400,
+  "config_fingerprint": "87f20ceeb84ccc6ea2d48678c7810ac5",
+  "status": "SUCCESS"
+}

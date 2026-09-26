@@ -1,0 +1,18 @@
+=== PHASE 3A: BLOCKING EXPERIMENTS ===
+
+Dataset:
+- Source 1 records tested: 500
+- Source 2+3 records used (true matches + 10k random subset per source): 21776
+- Total true entity pairs for these S1 records: 1778
+
+      Strategy  Candidate Pairs Avg Candidates/S1  Median   Max True-Pair Recall  S1 with >=1 Match  Zero-Candidate S1
+    Exact Name              381              0.76       1     6           0.2075                261                235
+Country + Name              381              0.76       1     6           0.2075                261                235
+         Token           817986           1635.97    1739  4094           0.8560                456                  0
+   Char 3-gram          2569111           5138.22    4989 10786           0.9156                462                  0
+
+Interpretation:
+Exact Name blocking generates very few candidates (high precision, low candidate volume) but suffers from low recall because any typo, formatting difference, or missing word breaks the match.
+Adding Country to Exact Name blocking slightly reduces candidate volume further but doesn't improve recall.
+Token blocking significantly increases recall by matching entities sharing at least one word, but the candidate volume explodes (due to common tokens like 'Inc', 'LLC', 'Private').
+Character 3-gram blocking achieves the highest recall, finding matches even with typos, but produces an astronomical number of candidates, making it computationally expensive without filtering.

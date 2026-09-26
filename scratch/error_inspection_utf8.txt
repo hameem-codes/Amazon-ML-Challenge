@@ -1,0 +1,575 @@
+=== 13 FALSE POSITIVES ===
+
+FP #1:
+  S1 ID: S1-881848076, Target ID: S2-820558687 (S2)
+  S1 Name: ozl india
+  Target Name: tavozeph
+  S1 Addr: plot no 155 sahid nagar bhubaneswar khordha orissa
+  Target Addr: plot no 6 143 bhubaneswar khordha orissa
+  S1 Country: india, Target Country: india
+  Model Score: 0.9218
+  Blocking Keys: 1, Evidence Score: 240.0
+  Similarities: Name Jaro=0.491, Name Jac=0.000, Name TFIDF=0.500, Addr Jac=0.500, Addr TFIDF=0.587
+
+FP #2:
+  S1 ID: S1-333207746, Target ID: S3-692514298 (S3)
+  S1 Name: townsend associates
+  Target Name: townsend iron works
+  S1 Addr: 9113 sycamore leaf drive fort worth tx
+  Target Addr: 009114 sycamore leaf dr fort worth texas
+  S1 Country: us, Target Country: us
+  Model Score: 0.9992
+  Blocking Keys: 4, Evidence Score: 390.0
+  Similarities: Name Jaro=0.836, Name Jac=0.250, Name TFIDF=0.566, Addr Jac=0.400, Addr TFIDF=0.736
+
+FP #3:
+  S1 ID: S1-881015038, Target ID: S3-870808310 (S3)
+  S1 Name: bharat industries private limited
+  Target Name: bharat industries
+  S1 Addr: b 3 276 chitrakoot vaishali nagar jaipur rajasthan
+  Target Addr: 
+  S1 Country: india, Target Country: india
+  Model Score: 0.9938
+  Blocking Keys: 3, Evidence Score: 220.0
+  Similarities: Name Jaro=0.903, Name Jac=0.500, Name TFIDF=0.906, Addr Jac=0.000, Addr TFIDF=0.000
+
+FP #4:
+  S1 ID: S1-702336597, Target ID: S2-439359291 (S2)
+  S1 Name: physical therapy coastal physicians llc
+  Target Name: physical therapy coastal
+  S1 Addr: 4219 110th street village of pleasant prairie wi
+  Target Addr: 
+  S1 Country: us, Target Country: us
+  Model Score: 0.9813
+  Blocking Keys: 3, Evidence Score: 290.0
+  Similarities: Name Jaro=0.923, Name Jac=0.600, Name TFIDF=0.842, Addr Jac=0.000, Addr TFIDF=0.000
+
+FP #5:
+  S1 ID: S1-631152952, Target ID: S2-672734557 (S2)
+  S1 Name: first lutheran church
+  Target Name: first lutheran church trading
+  S1 Addr: 595 hicks road unit e nashville tn
+  Target Addr: 
+  S1 Country: us, Target Country: us
+  Model Score: 0.9893
+  Blocking Keys: 3, Evidence Score: 290.0
+  Similarities: Name Jaro=0.945, Name Jac=0.750, Name TFIDF=0.912, Addr Jac=0.000, Addr TFIDF=0.000
+
+FP #6:
+  S1 ID: S1-812486340, Target ID: S2-154334183 (S2)
+  S1 Name: fortune consultants private limited
+  Target Name: private marwa consultants limited
+  S1 Addr: house no 6 road no 5 east punjabi bagh new delhi west delhi delhi
+  Target Addr: north east delhi 4786 5
+  S1 Country: india, Target Country: india
+  Model Score: 0.9776
+  Blocking Keys: 2, Evidence Score: 190.0
+  Similarities: Name Jaro=0.690, Name Jac=0.600, Name TFIDF=0.701, Addr Jac=0.231, Addr TFIDF=0.508
+
+FP #7:
+  S1 ID: S1-611838759, Target ID: S2-722952635 (S2)
+  S1 Name: kudos foundation private limited
+  Target Name: रॉयल एनर्जी प्राइवेट लिमिटेड
+  S1 Addr: 409 gundecha ind complex akurli road kandivali east mumbai mumbai city maharashtra
+  Target Addr: mumbai maharashtra mumbai city gundecha industrial complex akurli road kandivali east 00127
+  S1 Country: india, Target Country: india
+  Model Score: 0.9930
+  Blocking Keys: 1, Evidence Score: 420.0
+  Similarities: Name Jaro=0.400, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.692, Addr TFIDF=0.840
+
+FP #8:
+  S1 ID: S1-68456921, Target ID: S2-651292790 (S2)
+  S1 Name: dynamic hospitality private limited
+  Target Name: patna hospitality private limited
+  S1 Addr: 2nd floor trivedi bhawan pghpl group campus opp western gate a n college boring r oad patna bihar
+  Target Addr: sudharma opp a n college boring road patna bihar
+  S1 Country: india, Target Country: india
+  Model Score: 0.9938
+  Blocking Keys: 2, Evidence Score: 310.0
+  Similarities: Name Jaro=0.800, Name Jac=0.600, Name TFIDF=0.493, Addr Jac=0.350, Addr TFIDF=0.527
+
+FP #9:
+  S1 ID: S1-630839433, Target ID: S2-849565658 (S2)
+  S1 Name: chiropractic associates inc
+  Target Name: chiropractic inc
+  S1 Addr: 511 55th street renton wa
+  Target Addr: 
+  S1 Country: us, Target Country: us
+  Model Score: 0.9869
+  Blocking Keys: 3, Evidence Score: 150.0
+  Similarities: Name Jaro=0.906, Name Jac=0.667, Name TFIDF=0.834, Addr Jac=0.000, Addr TFIDF=0.000
+
+FP #10:
+  S1 ID: S1-823023497, Target ID: S3-538882911 (S3)
+  S1 Name: pediatric physicians
+  Target Name: pediatric dental physicians inc
+  S1 Addr: 1221 spruce drive zebulon nc
+  Target Addr: 
+  S1 Country: us, Target Country: us
+  Model Score: 0.9563
+  Blocking Keys: 3, Evidence Score: 220.0
+  Similarities: Name Jaro=0.889, Name Jac=0.500, Name TFIDF=0.782, Addr Jac=0.000, Addr TFIDF=0.000
+
+FP #11:
+  S1 ID: S1-556845820, Target ID: S3-590941398 (S3)
+  S1 Name: monarch inc
+  Target Name: monarch pc
+  S1 Addr: 8557 cliffdale road fayetteville nc
+  Target Addr: 
+  S1 Country: us, Target Country: us
+  Model Score: 0.9717
+  Blocking Keys: 3, Evidence Score: 150.0
+  Similarities: Name Jaro=0.944, Name Jac=0.333, Name TFIDF=0.770, Addr Jac=0.000, Addr TFIDF=0.000
+
+FP #12:
+  S1 ID: S1-812486340, Target ID: S3-652320075 (S3)
+  S1 Name: fortune consultants private limited
+  Target Name: fortune global private limited
+  S1 Addr: house no 6 road no 5 east punjabi bagh new delhi west delhi delhi
+  Target Addr: h no 16 u g f road no 7 east punjabi bagh new delhi दिल्ली
+  S1 Country: india, Target Country: india
+  Model Score: 0.9219
+  Blocking Keys: 4, Evidence Score: 390.0
+  Similarities: Name Jaro=0.882, Name Jac=0.600, Name TFIDF=0.683, Addr Jac=0.389, Addr TFIDF=0.497
+
+FP #13:
+  S1 ID: S1-958418132, Target ID: S3-176726384 (S3)
+  S1 Name: rosina beatty trusted grid
+  Target Name: rosina beatty trusted grid uptown
+  S1 Addr: 12 anton court sacramento ca
+  Target Addr: 14 anton ct sacramento california
+  S1 Country: us, Target Country: us
+  Model Score: 0.9997
+  Blocking Keys: 4, Evidence Score: 480.0
+  Similarities: Name Jaro=0.958, Name Jac=0.800, Name TFIDF=0.934, Addr Jac=0.250, Addr TFIDF=0.621
+
+=== 33 FALSE NEGATIVES ===
+
+FN #1:
+  S1 ID: S1-795631320, Target ID: S2-526762534 (S2)
+  S1 Name: smart trading private limited
+  Target Name: ಸ್ಮಾರ್ಟ್ ಟ್ರೇಡಿಂಗ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್
+  S1 Addr: flat no 1 22 vijaya enclave nb bangalore south bangalore karnataka
+  Target Addr: fdat no 1 22 bangalore south bangalore ಕರ್ನಾಟಕ
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.0132
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 120.0
+  Similarities: Name Jaro=0.396, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.417, Addr TFIDF=0.555
+
+FN #2:
+  S1 ID: S1-900870097, Target ID: S3-962132902 (S3)
+  S1 Name: gujarat technologies private limited
+  Target Name: गुजरात टेक्नोलॉजीज प्राइवेट लिमिटेड
+  S1 Addr: cabin no 108 first floor tower 1 steller crest business center it park c 25 sector 6 2 noida gautam buddha nagar uttar pradesh
+  Target Addr: cabin no 108 noida gautam buddha nagar up
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.8968
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 240.0
+  Similarities: Name Jaro=0.390, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.280, Addr TFIDF=0.541
+
+FN #3:
+  S1 ID: S1-91085118, Target ID: S2-581064933 (S2)
+  S1 Name: eastern trading private limited
+  Target Name: ईस्टर्न ट्रेडिंग प्राइवेट लिमिटेड
+  S1 Addr: flat no 204 building 47 sector 54 56 58 seawood thane maharashtra
+  Target Addr: thane maharashtra no 04 thane
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.0082
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 120.0
+  Similarities: Name Jaro=0.396, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.231, Addr TFIDF=0.278
+
+FN #4:
+  S1 ID: S1-483281264, Target ID: S3-246582348 (S3)
+  S1 Name: louisa s group
+  Target Name: lrusir s group
+  S1 Addr: 599 mountain shadow lane maryville tn
+  Target Addr: 599d mountain shadow lane po box 2895 maryille tennessee
+  S1 Country: us, Target Country: us
+  Generated: True, Survived Cap: True
+  Model Score: 0.9052
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 120.0
+  Similarities: Name Jaro=0.839, Name Jac=0.500, Name TFIDF=0.554, Addr Jac=0.250, Addr TFIDF=0.434
+
+FN #5:
+  S1 ID: S1-360188878, Target ID: S3-875542917 (S3)
+  S1 Name: good constructions
+  Target Name: गुड कंस्ट्रक्शंस
+  S1 Addr: c o jaharoom bee qureshi near jobat tent house rajiv colony deodara mandla madhya pradesh
+  Target Addr: h no 78 c o jaharoom bee qureshi near jobat tent house mandla मध्य प्रदेश
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.6636
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 360.0
+  Similarities: Name Jaro=0.373, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.500, Addr TFIDF=0.716
+
+FN #6:
+  S1 ID: S1-68456921, Target ID: S2-154545552 (S2)
+  S1 Name: dynamic hospitality private limited
+  Target Name: डायनामिक हॉस्पिटैलिटी प्राइवेट लिमिटेड
+  S1 Addr: 2nd floor trivedi bhawan pghpl group campus opp western gate a n college boring r oad patna bihar
+  Target Addr: floor patna bihar
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.4557
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 120.0
+  Similarities: Name Jaro=0.388, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.167, Addr TFIDF=0.314
+
+FN #7:
+  S1 ID: S1-774070269, Target ID: S3-346474131 (S3)
+  S1 Name: guru energy private limited
+  Target Name: guru energy ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್
+  S1 Addr: 132 ground floor mig 1st main 2nd cross 707 khb yelahanka new town bangalore karnataka
+  Target Addr: bangalore ಕರ್ನಾಟಕ bangalore 132
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.0185
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 4, Evidence Score: 280.0
+  Similarities: Name Jaro=0.643, Name Jac=0.333, Name TFIDF=0.420, Addr Jac=0.125, Addr TFIDF=0.247
+
+FN #8:
+  S1 ID: S1-519482575, Target ID: S2-599641873 (S2)
+  S1 Name: eurasia foods
+  Target Name: efoods com
+  S1 Addr: apsara villa 17 d crossindira nagar ii stage bangalore karnataka bangalore
+  Target Addr: hn 406 apsara villa 17 d crossindira nagar ii stage bengaluru null ಕರ್ನಾಟಕ
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.3547
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 240.0
+  Similarities: Name Jaro=0.569, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.533, Addr TFIDF=0.677
+
+FN #9:
+  S1 ID: S1-745839307, Target ID: S2-148602546 (S2)
+  S1 Name: innovative agro private limited
+  Target Name: ಇನೋವೇಟಿವ್ ಅಗ್ರೋ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್
+  S1 Addr: no 1 ground floor h i m towers 9th cross kempegowd layout nageshwara nagebahalli bangalore karnataka
+  Target Addr: karnataka bangalore no 1
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.3534
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 120.0
+  Similarities: Name Jaro=0.396, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.250, Addr TFIDF=0.321
+
+FN #10:
+  S1 ID: S1-763496609, Target ID: S3-510672652 (S3)
+  S1 Name: shakti consulting limited
+  Target Name: shakticonsulting com
+  S1 Addr: flat no 8 c wing sai tower chs ltd ambadi road vasai west thane maharashtra
+  Target Addr: door no 8 thane mh
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.5831
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 3, Evidence Score: 140.0
+  Similarities: Name Jaro=0.868, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.176, Addr TFIDF=0.277
+
+FN #11:
+  S1 ID: S1-489995071, Target ID: S2-409684103 (S2)
+  S1 Name: fortune apex hospitality pvt ltd
+  Target Name: फॉर्च्यून एपेक्स हॉस्पिटैलिटी प्रा लि
+  S1 Addr: 16a 406 vasundhara ghaziabad uttar pradesh
+  Target Addr: door no 16a 406 vasundhara ghaziabad crossing republic उत्तर प्रदेश
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.0610
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 120.0
+  Similarities: Name Jaro=0.411, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.333, Addr TFIDF=0.618
+
+FN #12:
+  S1 ID: S1-486296456, Target ID: S2-440266189 (S2)
+  S1 Name: asset building fellowship
+  Target Name: asset building services
+  S1 Addr: 1510 beaumont street sheppard afb tx
+  Target Addr: 
+  S1 Country: us, Target Country: us
+  Generated: True, Survived Cap: True
+  Model Score: 0.4585
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 3, Evidence Score: 220.0
+  Similarities: Name Jaro=0.889, Name Jac=0.500, Name TFIDF=0.770, Addr Jac=0.000, Addr TFIDF=0.000
+
+FN #13:
+  S1 ID: S1-898630961, Target ID: S2-503875679 (S2)
+  S1 Name: best infra limited
+  Target Name: बेस्ट इंफ्रा लिमिटेड
+  S1 Addr: naman centre c 31 bandra kurla complex g block opp dena bank mumbai maharashtra
+  Target Addr: naan centre mumbai maharashtra
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.0869
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 180.0
+  Similarities: Name Jaro=0.404, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.200, Addr TFIDF=0.362
+
+FN #14:
+  S1 ID: S1-917085859, Target ID: S2-869027552 (S2)
+  S1 Name: shivam systems llp
+  Target Name: शिवम सिस्टम्स एलएलपी
+  S1 Addr: palwal 561 housing board colony faridabad nakul farm haryana hathin
+  Target Addr: हरियाणा faridabad nakul farm
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.2452
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 180.0
+  Similarities: Name Jaro=0.404, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.273, Addr TFIDF=0.428
+
+FN #15:
+  S1 ID: S1-900870097, Target ID: S3-948310651 (S3)
+  S1 Name: gujarat technologies private limited
+  Target Name: गुजरात टेक्नोलॉजीज प्राइवेट लिमिटेड
+  S1 Addr: cabin no 108 first floor tower 1 steller crest business center it park c 25 sector 6 2 noida gautam buddha nagar uttar pradesh
+  Target Addr: cabin no 108 noida gautam buddha nagar up
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.8968
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 240.0
+  Similarities: Name Jaro=0.390, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.280, Addr TFIDF=0.541
+
+FN #16:
+  S1 ID: S1-587107442, Target ID: S2-664925321 (S2)
+  S1 Name: digital healthcare private limited
+  Target Name: ಡಿಜಿಟಲ್ ಹೆಲ್ತ್ ಕೇರ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್
+  S1 Addr: no 1528 2nd floor 3rd cross opp g s s school 2nd block hbr layout bangalore karnataka
+  Target Addr: no bangalore karnataka
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.0313
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 120.0
+  Similarities: Name Jaro=0.390, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.200, Addr TFIDF=0.288
+
+FN #17:
+  S1 ID: S1-338840619, Target ID: S2-624410308 (S2)
+  S1 Name: quartz llc
+  Target Name: llc quiatrz
+  S1 Addr: 602 723 bldg residence crittenden county ky
+  Target Addr: 594 723 crittenden county ky
+  S1 Country: us, Target Country: us
+  Generated: True, Survived Cap: True
+  Model Score: 0.5981
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 120.0
+  Similarities: Name Jaro=0.421, Name Jac=0.333, Name TFIDF=0.336, Addr Jac=0.500, Addr TFIDF=0.643
+
+FN #18:
+  S1 ID: S1-898630961, Target ID: S3-683805650 (S3)
+  S1 Name: best infra limited
+  Target Name: बेस्ट इंफ्रा लिमिटेड
+  S1 Addr: naman centre c 31 bandra kurla complex g block opp dena bank mumbai maharashtra
+  Target Addr: naman centre mumbai महाराष्ट्र
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.6364
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 180.0
+  Similarities: Name Jaro=0.404, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.200, Addr TFIDF=0.343
+
+FN #19:
+  S1 ID: S1-745839307, Target ID: S3-218169504 (S3)
+  S1 Name: innovative agro private limited
+  Target Name: innovativeagro com
+  S1 Addr: no 1 ground floor h i m towers 9th cross kempegowd layout nageshwara nagebahalli bangalore karnataka
+  Target Addr: no g 1 bangalore ka
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.0583
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 3, Evidence Score: 140.0
+  Similarities: Name Jaro=0.856, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.167, Addr TFIDF=0.169
+
+FN #20:
+  S1 ID: S1-91085118, Target ID: S2-147057908 (S2)
+  S1 Name: eastern trading private limited
+  Target Name: ईस्टर्न ट्रेडिंग प्राइवेट लिमिटेड
+  S1 Addr: flat no 204 building 47 sector 54 56 58 seawood thane maharashtra
+  Target Addr: flat no 04 thane maharashtra
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.4381
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 180.0
+  Similarities: Name Jaro=0.396, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.308, Addr TFIDF=0.317
+
+FN #21:
+  S1 ID: S1-445455950, Target ID: S2-777947702 (S2)
+  S1 Name: blue bike shop
+  Target Name: blue bike shóp co
+  S1 Addr: 807 jackson boulevard unit 1 3 jonesborough tn
+  Target Addr: 
+  S1 Country: us, Target Country: us
+  Generated: True, Survived Cap: True
+  Model Score: 0.8324
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 3, Evidence Score: 220.0
+  Similarities: Name Jaro=0.950, Name Jac=0.400, Name TFIDF=0.521, Addr Jac=0.000, Addr TFIDF=0.000
+
+FN #22:
+  S1 ID: S1-51101506, Target ID: S2-292920646 (S2)
+  S1 Name: krishna media pvt ltd
+  Target Name: കൃഷ്ണ മീഡിയ പ്രൈവറ്റ് ലിമിറ്റഡ്
+  S1 Addr: house no 8 64 kva house naduvattom karinkallthani road ayilakkad po malappuram malappuram malapuram kerala
+  Target Addr: house no 7 64 malapuram malappuram kerala
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.5171
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 240.0
+  Similarities: Name Jaro=0.413, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.429, Addr TFIDF=0.645
+
+FN #23:
+  S1 ID: S1-940946868, Target ID: S2-528071784 (S2)
+  S1 Name: beckmann net inc
+  Target Name: beckmann net incorporated
+  S1 Addr: 605 st enodoc circle prescott az
+  Target Addr: 
+  S1 Country: us, Target Country: us
+  Generated: True, Survived Cap: True
+  Model Score: 0.5270
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 3, Evidence Score: 220.0
+  Similarities: Name Jaro=0.928, Name Jac=0.500, Name TFIDF=0.864, Addr Jac=0.000, Addr TFIDF=0.000
+
+FN #24:
+  S1 ID: S1-795631320, Target ID: S3-150741082 (S3)
+  S1 Name: smart trading private limited
+  Target Name: ಸ್ಮಾರ್ಟ್ ಟ್ರೇಡಿಂಗ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್
+  S1 Addr: flat no 1 22 vijaya enclave nb bangalore south bangalore karnataka
+  Target Addr: ka flat no 1 22 bangalore bangalore south
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.7918
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 180.0
+  Similarities: Name Jaro=0.396, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.545, Addr TFIDF=0.704
+
+FN #25:
+  S1 ID: S1-83210593, Target ID: S3-34473893 (S3)
+  S1 Name: first infrastructure private limited
+  Target Name: private first lnfrastructure ltd
+  S1 Addr: 101 21st century business center beside world trade center ring road surat gujarat
+  Target Addr: surat gj surat 101
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.1024
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 2, Evidence Score: 130.0
+  Similarities: Name Jaro=0.766, Name Jac=0.333, Name TFIDF=0.376, Addr Jac=0.154, Addr TFIDF=0.296
+
+FN #26:
+  S1 ID: S1-183760590, Target ID: S2-947379718 (S2)
+  S1 Name: precision business worldwide corporation
+  Target Name: precisi0n business worldwide
+  S1 Addr: 1213 clarinet road elkhart in
+  Target Addr: 
+  S1 Country: us, Target Country: us
+  Generated: True, Survived Cap: True
+  Model Score: 0.0216
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 3, Evidence Score: 220.0
+  Similarities: Name Jaro=0.883, Name Jac=0.400, Name TFIDF=0.524, Addr Jac=0.000, Addr TFIDF=0.000
+
+FN #27:
+  S1 ID: S1-308240187, Target ID: S3-377116427 (S3)
+  S1 Name: lb xrp
+  Target Name: lb partners
+  S1 Addr: 3118 soaring pines trail conroe tx
+  Target Addr: 
+  S1 Country: us, Target Country: us
+  Generated: True, Survived Cap: True
+  Model Score: 0.2491
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 2, Evidence Score: 100.0
+  Similarities: Name Jaro=0.696, Name Jac=0.333, Name TFIDF=0.678, Addr Jac=0.000, Addr TFIDF=0.000
+
+FN #28:
+  S1 ID: S1-777555607, Target ID: S3-10840656 (S3)
+  S1 Name: digital ventures limited
+  Target Name: डिजिटल वेंचर्स लिमिटेड
+  S1 Addr: new delhi hari nagar extention baderpur south delhi 12 c delhi
+  Target Addr: 12 c n a south east new delhi dl
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.1716
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 120.0
+  Similarities: Name Jaro=0.391, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.385, Addr TFIDF=0.483
+
+FN #29:
+  S1 ID: S1-777555607, Target ID: S3-632142415 (S3)
+  S1 Name: digital ventures limited
+  Target Name: डिजिटल वेंचर्स लिमिटेड
+  S1 Addr: new delhi hari nagar extention baderpur south delhi 12 c delhi
+  Target Addr: 12 c n a south delhi dl
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.3262
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 120.0
+  Similarities: Name Jaro=0.391, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.333, Addr TFIDF=0.483
+
+FN #30:
+  S1 ID: S1-335752330, Target ID: S2-897778962 (S2)
+  S1 Name: ranna brill certified vulcan upper allen township
+  Target Name: rannabrillcertified com
+  S1 Addr: 413 reservoir road upper allen township pa
+  Target Addr: reservoir rd mechanicsburg pa
+  S1 Country: us, Target Country: us
+  Generated: True, Survived Cap: True
+  Model Score: 0.3067
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 3, Evidence Score: 140.0
+  Similarities: Name Jaro=0.696, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.222, Addr TFIDF=0.448
+
+FN #31:
+  S1 ID: S1-336167025, Target ID: S2-513842592 (S2)
+  S1 Name: dasi rothrock dds
+  Target Name: dasi rothrock services
+  S1 Addr: 3267 eastcrest road west valley city ut
+  Target Addr: 
+  S1 Country: us, Target Country: us
+  Generated: True, Survived Cap: True
+  Model Score: 0.8858
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 3, Evidence Score: 220.0
+  Similarities: Name Jaro=0.913, Name Jac=0.500, Name TFIDF=0.852, Addr Jac=0.000, Addr TFIDF=0.000
+
+FN #32:
+  S1 ID: S1-92729851, Target ID: S2-65120700 (S2)
+  S1 Name: capital council inc
+  Target Name: capital council inc www capitalco com
+  S1 Addr: 221 main street florence ky
+  Target Addr: 
+  S1 Country: us, Target Country: us
+  Generated: True, Survived Cap: True
+  Model Score: 0.9023
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 3, Evidence Score: 220.0
+  Similarities: Name Jaro=0.903, Name Jac=0.500, Name TFIDF=0.796, Addr Jac=0.000, Addr TFIDF=0.000
+
+FN #33:
+  S1 ID: S1-587107442, Target ID: S2-734571558 (S2)
+  S1 Name: digital healthcare private limited
+  Target Name: ಡಿಜಿಟಲ್ ಹೆಲ್ತ್ ಕೇರ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್
+  S1 Addr: no 1528 2nd floor 3rd cross opp g s s school 2nd block hbr layout bangalore karnataka
+  Target Addr: h no bangalore karnataka
+  S1 Country: india, Target Country: india
+  Generated: True, Survived Cap: True
+  Model Score: 0.0039
+  Classification: C (Candidate reached model but model rejected it (score < 0.910))
+  Blocking Keys: 1, Evidence Score: 120.0
+  Similarities: Name Jaro=0.390, Name Jac=0.000, Name TFIDF=0.000, Addr Jac=0.188, Addr TFIDF=0.250

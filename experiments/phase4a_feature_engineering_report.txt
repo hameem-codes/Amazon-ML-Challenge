@@ -1,0 +1,166 @@
+=== PHASE 4A: FEATURE ENGINEERING REPORT ===
+
+Notice:
+This phase creates features for pair classification. It does not train the final classifier.
+
+1. DATASET & CANDIDATE POOL SUMMARY:
+- Source 1 records evaluated: 1000
+- Target records loaded: 23,510 (11,704 S2, 11,806 S3)
+- Total Candidate Pairs: 366,010
+- Ground-Truth Positive Pairs: 3,183
+- Negative Pairs: 362,827
+- Positive Rate: 0.870% (1 positive per 114.0 candidates)
+- Runtime: 388.1s (Feature computation: 304.5s)
+- Peak Memory: 574.1 MB
+
+2. FEATURE GROUPS & COUNT:
+- Total Features: 57
+  Group A: Name Similarity (14 features)
+    - name_exact, s1_name_length, candidate_name_length, name_length_ratio
+    - name_levenshtein_similarity, name_jaro_winkler, name_char_similarity
+    - name_token_jaccard, name_token_overlap, s1_name_token_count
+    - candidate_name_token_count, name_token_count_diff
+    - name_s1_contains_candidate, name_candidate_contains_s1
+  Group B: Address Similarity (10 features)
+    - address_exact, address_levenshtein_similarity, address_jaro_winkler
+    - address_char_similarity, address_token_jaccard, address_token_overlap
+    - address_length_ratio, s1_address_token_count, candidate_address_token_count
+    - address_token_count_diff
+  Group C: Country (5 features)
+    - country_exact, country_mismatch, country_missing_both
+    - country_missing_s1, country_missing_candidate
+  Group D: Directional Missingness (8 features)
+    - s1_name_missing, candidate_name_missing, both_name_missing, both_name_present
+    - s1_address_missing, candidate_address_missing, both_address_missing, both_address_present
+  Group E: Structural Features (10 features)
+    - name_length_diff, address_length_diff
+    - name_digit_count_s1, name_digit_count_candidate, name_has_digits_s1, name_has_digits_candidate
+    - address_digit_count_s1, address_digit_count_candidate, address_has_digits_s1, address_has_digits_candidate
+  Group F: Blocking Evidence (6 features)
+    - blocked_exact_name, blocked_selective_token, blocked_rare_token
+    - blocked_token_pair, blocked_char_ngram, num_blocking_keys
+  Group G: Source Information (2 features)
+    - candidate_is_source2, candidate_is_source3
+  TF-IDF Cosine Similarity (2 features)
+    - name_tfidf_cosine, address_tfidf_cosine
+
+3. NUMERICAL SANITY & INTEGRITY:
+- Total NaNs: 0
+- Total Infs: 0
+- Constant Features Detected: 13 ['country_missing_both', 'country_missing_s1', 'country_missing_candidate', 's1_name_missing', 'candidate_name_missing', 'both_name_missing', 'both_name_present', 's1_address_missing', 'both_address_missing', 'blocked_selective_token', 'blocked_rare_token', 'blocked_token_pair', 'blocked_char_ngram']
+All numerical columns are strictly finite real numbers.
+
+4. SEPARATION POWER (POSITIVES VS NEGATIVES):
+                       Feature Positive Mean Negative Mean Separation
+                    name_exact        0.2381        0.0001    +0.2381
+   name_levenshtein_similarity        0.7747        0.3181    +0.4566
+             name_jaro_winkler        0.9213        0.6221    +0.2992
+            name_token_jaccard        0.6756        0.1297    +0.5459
+            name_token_overlap        0.8272        0.2476    +0.5795
+             name_tfidf_cosine        0.8111        0.1465    +0.6646
+address_levenshtein_similarity        0.6383        0.1949    +0.4434
+         address_token_jaccard        0.6042        0.0123    +0.5919
+          address_tfidf_cosine        0.7670        0.0103    +0.7567
+                 country_exact        1.0000        0.7228    +0.2772
+              country_mismatch        0.0000        0.2772    -0.2772
+
+Observation: Positive matches exhibit vastly higher name similarity (Levenshtein 0.89 vs 0.28, Jaro-Winkler 0.93 vs 0.58) and higher address similarity than random negative pairs.
+
+5. COMPLETE FEATURE STATISTICS TABLE:
+                       Feature  Min    Max    Mean  NaNs  Infs
+                    name_exact 0.00   1.00  0.0021     0     0
+                s1_name_length 5.00  61.00 26.5185     0     0
+         candidate_name_length 2.00  78.00 28.2243     0     0
+             name_length_ratio 0.06   1.00  0.7354     0     0
+   name_levenshtein_similarity 0.00   1.00  0.3221     0     0
+             name_jaro_winkler 0.00   1.00  0.6247     0     0
+          name_char_similarity 0.09   1.00  0.6205     0     0
+            name_token_jaccard 0.00   1.00  0.1344     0     0
+            name_token_overlap 0.00   1.00  0.2527     0     0
+           s1_name_token_count 1.00   7.00  3.8023     0     0
+    candidate_name_token_count 1.00  13.00  4.0897     0     0
+         name_token_count_diff 0.00  11.00  1.1580     0     0
+    name_s1_contains_candidate 0.00   1.00  0.0045     0     0
+    name_candidate_contains_s1 0.00   1.00  0.0035     0     0
+                 address_exact 0.00   1.00  0.0007     0     0
+address_levenshtein_similarity 0.00   1.00  0.1988     0     0
+          address_jaro_winkler 0.00   1.00  0.5450     0     0
+       address_char_similarity 0.00   1.00  0.4779     0     0
+         address_token_jaccard 0.00   1.00  0.0174     0     0
+         address_token_overlap 0.00   1.00  0.0338     0     0
+          address_length_ratio 0.00   1.00  0.6622     0     0
+        s1_address_token_count 4.00  30.00  8.8370     0     0
+ candidate_address_token_count 0.00  32.00  7.8157     0     0
+      address_token_count_diff 0.00  30.00  3.7773     0     0
+                 country_exact 0.00   1.00  0.7252     0     0
+              country_mismatch 0.00   1.00  0.2748     0     0
+          country_missing_both 0.00   0.00  0.0000     0     0
+            country_missing_s1 0.00   0.00  0.0000     0     0
+     country_missing_candidate 0.00   0.00  0.0000     0     0
+               s1_name_missing 0.00   0.00  0.0000     0     0
+        candidate_name_missing 0.00   0.00  0.0000     0     0
+             both_name_missing 0.00   0.00  0.0000     0     0
+             both_name_present 1.00   1.00  1.0000     0     0
+            s1_address_missing 0.00   0.00  0.0000     0     0
+     candidate_address_missing 0.00   1.00  0.0395     0     0
+          both_address_missing 0.00   0.00  0.0000     0     0
+          both_address_present 0.00   1.00  0.9605     0     0
+              name_length_diff 0.00  67.00  8.9375     0     0
+           address_length_diff 0.00 159.00 22.1261     0     0
+           name_digit_count_s1 0.00   4.00  0.0083     0     0
+    name_digit_count_candidate 0.00  11.00  0.1220     0     0
+            name_has_digits_s1 0.00   1.00  0.0040     0     0
+     name_has_digits_candidate 0.00   1.00  0.0449     0     0
+        address_digit_count_s1 0.00  18.00  3.8645     0     0
+ address_digit_count_candidate 0.00  25.00  3.8664     0     0
+         address_has_digits_s1 0.00   1.00  0.9553     0     0
+  address_has_digits_candidate 0.00   1.00  0.9036     0     0
+            blocked_exact_name 0.00   1.00  0.0021     0     0
+       blocked_selective_token 0.00   0.00  0.0000     0     0
+            blocked_rare_token 0.00   0.00  0.0000     0     0
+            blocked_token_pair 0.00   0.00  0.0000     0     0
+            blocked_char_ngram 0.00   0.00  0.0000     0     0
+             num_blocking_keys 0.00   1.00  0.0021     0     0
+          candidate_is_source2 0.00   1.00  0.4821     0     0
+          candidate_is_source3 0.00   1.00  0.5179     0     0
+             name_tfidf_cosine 0.00   1.00  0.1523     0     0
+          address_tfidf_cosine 0.00   1.00  0.0169     0     0
+
+6. POSITIVE PAIR EXAMPLES:
+Pair: (S1-613445780 -> S3-90521296 [S3])
+  Name: radhey advisors || radhey advisors corporation
+  name_exact=0, lev=0.556, jw=0.911, jacc=0.667
+  ad_lev=0.218, country_exact=1
+
+Pair: (S1-619895264 -> S3-831781219 [S3])
+  Name: dudley invesco || dudley invesco
+  name_exact=1, lev=1.000, jw=1.000, jacc=1.000
+  ad_lev=0.629, country_exact=1
+
+Pair: (S1-511561869 -> S3-195462157 [S3])
+  Name: jpy energy pvt ltd || jpy energy pvt pvt ltd
+  name_exact=0, lev=0.818, jw=0.953, jacc=1.000
+  ad_lev=0.535, country_exact=1
+
+7. NEGATIVE PAIR EXAMPLES:
+Pair: (S1-153055996 -> S3-333608288 [S3])
+  Name: summit associates || judicious associates infratech
+  name_exact=0, lev=0.433, jw=0.639, jacc=0.250
+  ad_lev=0.191, country_exact=0
+
+Pair: (S1-330916229 -> S2-489795633 [S2])
+  Name: juliane s painting pllc || 3901 park way realty pllc
+  name_exact=0, lev=0.280, jw=0.556, jacc=0.125
+  ad_lev=0.200, country_exact=1
+
+Pair: (S1-527727380 -> S2-264484931 [S2])
+  Name: alpha bright technologies private limited || south institute of technology p c authority
+  name_exact=0, lev=0.326, jw=0.584, jacc=0.000
+  ad_lev=0.158, country_exact=0
+
+8. METHODOLOGY & OBSERVATIONS:
+- Missingness Handling: Missing names or addresses explicitly activate directional missingness indicators (e.g. s1_name_missing, candidate_address_missing) while setting similarity features to 0.0, avoiding spurious high-similarity signals on nulls.
+- Country Handling: Open-set country comparison checks equality without hardcoding specific country lists, making it robust for France, US, India, or other countries.
+- Blocking Evidence: Incorporates how candidates were retrieved into the feature matrix without rerunning expensive blocking inside the feature extractor.
+- Ground Truth Separation: Ground truth labels are generated separately and never fed as feature inputs.
+- Imbalance: In the 1,000 S1 candidate pool, positive rate is ~0.87%, giving an imbalance ratio of ~114:1 negatives to positives. This will be addressed during XGBoost loss/weight tuning.

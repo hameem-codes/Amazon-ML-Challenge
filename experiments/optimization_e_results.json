@@ -1,0 +1,940 @@
+{
+  "benchmark_summary": {
+    "s1_count": 500,
+    "target_count": 1434993,
+    "candidate_cap": 400,
+    "config_fingerprint": "87f20ceeb84ccc6ea2d48678c7810ac5",
+    "reference_true_pairs": 4191
+  },
+  "configurations": {
+    "E0": {
+      "config": "E0",
+      "df_cap": null,
+      "label": "None (Production Baseline)",
+      "runtime_seconds": 443.5,
+      "total_runtime_seconds": 443.57,
+      "peak_rss_mb": 978.9,
+      "raw_candidates": 216808077,
+      "mean_raw_candidates": 400.0,
+      "median_raw_candidates": 400.0,
+      "max_raw_candidates": 400,
+      "post_cap_candidates": 200000,
+      "mean_post_cap_candidates": 400.0,
+      "ground_truth_pairs": 4191,
+      "raw_true_pairs_recovered": 4191,
+      "raw_recall": 1.0,
+      "post_cap_true_pairs_recovered": 1984,
+      "post_cap_recall": 0.473395,
+      "zero_candidate_s1_count": 0,
+      "channel_diagnostics": {
+        "Country": {
+          "keys": 1,
+          "raw_candidates": 216808077,
+          "unique_candidates": 216808077,
+          "true_pairs_recovered": 4191
+        },
+        "Name Token": {
+          "keys": 149509,
+          "raw_candidates": 93594036,
+          "unique_candidates": 89693642,
+          "true_pairs_recovered": 4191
+        },
+        "Prefix-3": {
+          "keys": 15043,
+          "raw_candidates": 4510680,
+          "unique_candidates": 4510680,
+          "true_pairs_recovered": 4191
+        },
+        "Prefix-4": {
+          "keys": 40717,
+          "raw_candidates": 3776600,
+          "unique_candidates": 3776600,
+          "true_pairs_recovered": 4191
+        },
+        "Address Token": {
+          "keys": 101821,
+          "raw_candidates": 263412364,
+          "unique_candidates": 145092677,
+          "true_pairs_recovered": 3381
+        }
+      },
+      "raw_candidate_reduction_pct": 0.0,
+      "runtime_reduction_pct": 0.0,
+      "e0_candidates_retained": 200000,
+      "e0_retention_pct": 100.0
+    },
+    "E1": {
+      "config": "E1",
+      "df_cap": 5000,
+      "label": "5,000",
+      "runtime_seconds": 23.02,
+      "total_runtime_seconds": 23.27,
+      "peak_rss_mb": 972.6,
+      "raw_candidates": 1215204,
+      "mean_raw_candidates": 363.54,
+      "median_raw_candidates": 400.0,
+      "max_raw_candidates": 400,
+      "post_cap_candidates": 181768,
+      "mean_post_cap_candidates": 363.54,
+      "ground_truth_pairs": 4191,
+      "raw_true_pairs_recovered": 1416,
+      "raw_recall": 0.337867,
+      "post_cap_true_pairs_recovered": 753,
+      "post_cap_recall": 0.179671,
+      "zero_candidate_s1_count": 3,
+      "channel_diagnostics": {
+        "Country": {
+          "keys": 1,
+          "raw_candidates": 1215204,
+          "unique_candidates": 1215204,
+          "true_pairs_recovered": 1416
+        },
+        "Name Token": {
+          "keys": 149407,
+          "raw_candidates": 390693,
+          "unique_candidates": 378450,
+          "true_pairs_recovered": 1280
+        },
+        "Prefix-3": {
+          "keys": 15002,
+          "raw_candidates": 356105,
+          "unique_candidates": 356105,
+          "true_pairs_recovered": 577
+        },
+        "Prefix-4": {
+          "keys": 40679,
+          "raw_candidates": 240583,
+          "unique_candidates": 240583,
+          "true_pairs_recovered": 714
+        },
+        "Address Token": {
+          "keys": 101758,
+          "raw_candidates": 600530,
+          "unique_candidates": 554597,
+          "true_pairs_recovered": 499
+        }
+      },
+      "raw_candidate_reduction_pct": 99.44,
+      "runtime_reduction_pct": 94.81,
+      "e0_candidates_retained": 14072,
+      "e0_retention_pct": 7.04
+    },
+    "E2": {
+      "config": "E2",
+      "df_cap": 10000,
+      "label": "10,000",
+      "runtime_seconds": 27.21,
+      "total_runtime_seconds": 27.48,
+      "peak_rss_mb": 992.4,
+      "raw_candidates": 2320416,
+      "mean_raw_candidates": 376.22,
+      "median_raw_candidates": 400.0,
+      "max_raw_candidates": 400,
+      "post_cap_candidates": 188108,
+      "mean_post_cap_candidates": 376.22,
+      "ground_truth_pairs": 4191,
+      "raw_true_pairs_recovered": 2036,
+      "raw_recall": 0.485803,
+      "post_cap_true_pairs_recovered": 938,
+      "post_cap_recall": 0.223813,
+      "zero_candidate_s1_count": 1,
+      "channel_diagnostics": {
+        "Country": {
+          "keys": 1,
+          "raw_candidates": 2320416,
+          "unique_candidates": 2320416,
+          "true_pairs_recovered": 2036
+        },
+        "Name Token": {
+          "keys": 149436,
+          "raw_candidates": 1082462,
+          "unique_candidates": 1021708,
+          "true_pairs_recovered": 1882
+        },
+        "Prefix-3": {
+          "keys": 15014,
+          "raw_candidates": 475838,
+          "unique_candidates": 475838,
+          "true_pairs_recovered": 790
+        },
+        "Prefix-4": {
+          "keys": 40692,
+          "raw_candidates": 422757,
+          "unique_candidates": 422757,
+          "true_pairs_recovered": 1054
+        },
+        "Address Token": {
+          "keys": 101779,
+          "raw_candidates": 1020070,
+          "unique_candidates": 940386,
+          "true_pairs_recovered": 511
+        }
+      },
+      "raw_candidate_reduction_pct": 98.93,
+      "runtime_reduction_pct": 93.86,
+      "e0_candidates_retained": 16112,
+      "e0_retention_pct": 8.06
+    },
+    "E3": {
+      "config": "E3",
+      "df_cap": 20000,
+      "label": "20,000",
+      "runtime_seconds": 36.86,
+      "total_runtime_seconds": 37.15,
+      "peak_rss_mb": 1012.8,
+      "raw_candidates": 6534370,
+      "mean_raw_candidates": 387.48,
+      "median_raw_candidates": 400.0,
+      "max_raw_candidates": 400,
+      "post_cap_candidates": 193742,
+      "mean_post_cap_candidates": 387.48,
+      "ground_truth_pairs": 4191,
+      "raw_true_pairs_recovered": 2442,
+      "raw_recall": 0.582677,
+      "post_cap_true_pairs_recovered": 1318,
+      "post_cap_recall": 0.314483,
+      "zero_candidate_s1_count": 0,
+      "channel_diagnostics": {
+        "Country": {
+          "keys": 1,
+          "raw_candidates": 6534370,
+          "unique_candidates": 6534370,
+          "true_pairs_recovered": 2442
+        },
+        "Name Token": {
+          "keys": 149468,
+          "raw_candidates": 3590966,
+          "unique_candidates": 3513866,
+          "true_pairs_recovered": 2418
+        },
+        "Prefix-3": {
+          "keys": 15029,
+          "raw_candidates": 1494849,
+          "unique_candidates": 1494849,
+          "true_pairs_recovered": 1834
+        },
+        "Prefix-4": {
+          "keys": 40705,
+          "raw_candidates": 1430348,
+          "unique_candidates": 1430348,
+          "true_pairs_recovered": 1886
+        },
+        "Address Token": {
+          "keys": 101791,
+          "raw_candidates": 2108765,
+          "unique_candidates": 2008194,
+          "true_pairs_recovered": 521
+        }
+      },
+      "raw_candidate_reduction_pct": 96.99,
+      "runtime_reduction_pct": 91.69,
+      "e0_candidates_retained": 18831,
+      "e0_retention_pct": 9.42
+    },
+    "E4": {
+      "config": "E4",
+      "df_cap": 50000,
+      "label": "50,000",
+      "runtime_seconds": 63.4,
+      "total_runtime_seconds": 63.8,
+      "peak_rss_mb": 1033.5,
+      "raw_candidates": 19385268,
+      "mean_raw_candidates": 398.51,
+      "median_raw_candidates": 400.0,
+      "max_raw_candidates": 400,
+      "post_cap_candidates": 199257,
+      "mean_post_cap_candidates": 398.51,
+      "ground_truth_pairs": 4191,
+      "raw_true_pairs_recovered": 4191,
+      "raw_recall": 1.0,
+      "post_cap_true_pairs_recovered": 2779,
+      "post_cap_recall": 0.663088,
+      "zero_candidate_s1_count": 0,
+      "channel_diagnostics": {
+        "Country": {
+          "keys": 1,
+          "raw_candidates": 19385268,
+          "unique_candidates": 19385268,
+          "true_pairs_recovered": 4191
+        },
+        "Name Token": {
+          "keys": 149496,
+          "raw_candidates": 12587684,
+          "unique_candidates": 12165027,
+          "true_pairs_recovered": 4191
+        },
+        "Prefix-3": {
+          "keys": 15043,
+          "raw_candidates": 4510680,
+          "unique_candidates": 4510680,
+          "true_pairs_recovered": 4191
+        },
+        "Prefix-4": {
+          "keys": 40717,
+          "raw_candidates": 3776600,
+          "unique_candidates": 3776600,
+          "true_pairs_recovered": 4191
+        },
+        "Address Token": {
+          "keys": 101800,
+          "raw_candidates": 6924417,
+          "unique_candidates": 5666780,
+          "true_pairs_recovered": 755
+        }
+      },
+      "raw_candidate_reduction_pct": 91.06,
+      "runtime_reduction_pct": 85.7,
+      "e0_candidates_retained": 27988,
+      "e0_retention_pct": 13.99
+    }
+  },
+  "lost_true_pairs_analysis": {
+    "E1": {
+      "lost_count": 1345,
+      "sample_details": [
+        {
+          "s1_id": "S1-827961773",
+          "target_id": "S3-885169937",
+          "s1_name": "the ecole sarl",
+          "target_name": "the ecole sarl",
+          "experimental_reason": "NameToken('ecole', DF=47,809 > cap); NameToken('sarl', DF=285,190 > cap); AddrToken('pessac', DF=68,822 > cap); AddrToken('nouvelle', DF=157,475 > cap); AddrToken('aquitaine', DF=157,166 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-556348793",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('club', DF=99,522 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-566540458",
+          "target_id": "S2-500325520",
+          "s1_name": "nantes societe sarl",
+          "target_name": "nantes societe sarl",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('societe', DF=18,024 > cap); NameToken('sarl', DF=285,190 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-17003766",
+          "target_id": "S2-388649316",
+          "s1_name": "saint nazaire sante",
+          "target_name": "saint nazaire sante",
+          "experimental_reason": "NameToken('saint', DF=26,284 > cap); NameToken('nazaire', DF=8,602 > cap); NameToken('sante', DF=13,640 > cap); Prefix3('sai', DF=13,201 > cap); Prefix4('sain', DF=13,025 > cap); AddrToken('saint', DF=113,612 > cap); AddrToken('nazaire', DF=73,360 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-383508132",
+          "target_id": "S2-45301433",
+          "s1_name": "developpement ecole france eurl",
+          "target_name": "developpement ecole france eurl",
+          "experimental_reason": "NameToken('ecole', DF=47,809 > cap); NameToken('france', DF=136,550 > cap); NameToken('eurl', DF=83,815 > cap); AddrToken('jules', DF=12,112 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-470791690",
+          "target_id": "S3-569403608",
+          "s1_name": "enseignement fils sarl",
+          "target_name": "enseignement fils sarl",
+          "experimental_reason": "NameToken('fils', DF=41,488 > cap); NameToken('sarl', DF=285,190 > cap); AddrToken('bois', DF=5,617 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-155512047",
+          "target_id": "S2-873295227",
+          "s1_name": "dunkerque amicale sas",
+          "target_name": "dunkerque amicale sas",
+          "experimental_reason": "NameToken('dunkerque', DF=10,838 > cap); NameToken('amicale', DF=65,224 > cap); NameToken('sas', DF=200,604 > cap); Prefix3('dun', DF=10,442 > cap); Prefix4('dunk', DF=10,125 > cap); AddrToken('dunkerque', DF=93,766 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-155512047",
+          "target_id": "S3-795234301",
+          "s1_name": "dunkerque amicale sas",
+          "target_name": "dunkerque amicale sas",
+          "experimental_reason": "NameToken('dunkerque', DF=10,838 > cap); NameToken('amicale', DF=65,224 > cap); NameToken('sas', DF=200,604 > cap); Prefix3('dun', DF=10,442 > cap); Prefix4('dunk', DF=10,125 > cap); AddrToken('dunkerque', DF=93,766 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-445315328",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('club', DF=99,522 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-5308195",
+          "target_id": "S3-98955464",
+          "s1_name": "nantes pharmacie",
+          "target_name": "nantes pharmacie",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('pharmacie', DF=26,030 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-728907172",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('club', DF=99,522 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-547411321",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "experimental_reason": "NameToken('lille', DF=21,512 > cap); NameToken('club', DF=99,522 > cap); Prefix3('lil', DF=20,648 > cap); Prefix4('lill', DF=20,251 > cap); AddrToken('saint', DF=113,612 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-562559718",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('club', DF=99,522 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-228177533",
+          "target_id": "S3-392088148",
+          "s1_name": "lille centre sarl",
+          "target_name": "lille centre sarl",
+          "experimental_reason": "NameToken('lille', DF=21,512 > cap); NameToken('centre', DF=45,675 > cap); NameToken('sarl', DF=285,190 > cap); Prefix3('lil', DF=20,648 > cap); Prefix4('lill', DF=20,251 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-637270286",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "experimental_reason": "NameToken('lille', DF=21,512 > cap); NameToken('club', DF=99,522 > cap); Prefix3('lil', DF=20,648 > cap); Prefix4('lill', DF=20,251 > cap); AddrToken('saint', DF=113,612 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-78965932",
+          "target_id": "S2-685783921",
+          "s1_name": "nantes amicale sas",
+          "target_name": "nantes amicale sas",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('amicale', DF=65,224 > cap); NameToken('sas', DF=200,604 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-16571726",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('club', DF=99,522 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-644418417",
+          "target_id": "S2-220386352",
+          "s1_name": "nantes ecole sas",
+          "target_name": "nantes ecole sas",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('ecole', DF=47,809 > cap); NameToken('sas', DF=200,604 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-312627881",
+          "target_id": "S2-87766151",
+          "s1_name": "dunkerque pharmacie sas",
+          "target_name": "dunkerque pharmacie sas",
+          "experimental_reason": "NameToken('dunkerque', DF=10,838 > cap); NameToken('pharmacie', DF=26,030 > cap); NameToken('sas', DF=200,604 > cap); Prefix3('dun', DF=10,442 > cap); Prefix4('dunk', DF=10,125 > cap); AddrToken('dunkerque', DF=93,766 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-862556918",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('club', DF=99,522 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        }
+      ]
+    },
+    "E2": {
+      "lost_count": 1267,
+      "sample_details": [
+        {
+          "s1_id": "S1-827961773",
+          "target_id": "S3-885169937",
+          "s1_name": "the ecole sarl",
+          "target_name": "the ecole sarl",
+          "experimental_reason": "NameToken('ecole', DF=47,809 > cap); NameToken('sarl', DF=285,190 > cap); AddrToken('pessac', DF=68,822 > cap); AddrToken('nouvelle', DF=157,475 > cap); AddrToken('aquitaine', DF=157,166 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-556348793",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('club', DF=99,522 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-566540458",
+          "target_id": "S2-500325520",
+          "s1_name": "nantes societe sarl",
+          "target_name": "nantes societe sarl",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('societe', DF=18,024 > cap); NameToken('sarl', DF=285,190 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-17003766",
+          "target_id": "S2-388649316",
+          "s1_name": "saint nazaire sante",
+          "target_name": "saint nazaire sante",
+          "experimental_reason": "NameToken('saint', DF=26,284 > cap); NameToken('sante', DF=13,640 > cap); Prefix3('sai', DF=13,201 > cap); Prefix4('sain', DF=13,025 > cap); AddrToken('saint', DF=113,612 > cap); AddrToken('nazaire', DF=73,360 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-383508132",
+          "target_id": "S2-45301433",
+          "s1_name": "developpement ecole france eurl",
+          "target_name": "developpement ecole france eurl",
+          "experimental_reason": "NameToken('ecole', DF=47,809 > cap); NameToken('france', DF=136,550 > cap); NameToken('eurl', DF=83,815 > cap); AddrToken('jules', DF=12,112 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-470791690",
+          "target_id": "S3-569403608",
+          "s1_name": "enseignement fils sarl",
+          "target_name": "enseignement fils sarl",
+          "experimental_reason": "NameToken('fils', DF=41,488 > cap); NameToken('sarl', DF=285,190 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-155512047",
+          "target_id": "S2-873295227",
+          "s1_name": "dunkerque amicale sas",
+          "target_name": "dunkerque amicale sas",
+          "experimental_reason": "NameToken('dunkerque', DF=10,838 > cap); NameToken('amicale', DF=65,224 > cap); NameToken('sas', DF=200,604 > cap); Prefix3('dun', DF=10,442 > cap); Prefix4('dunk', DF=10,125 > cap); AddrToken('dunkerque', DF=93,766 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-155512047",
+          "target_id": "S3-795234301",
+          "s1_name": "dunkerque amicale sas",
+          "target_name": "dunkerque amicale sas",
+          "experimental_reason": "NameToken('dunkerque', DF=10,838 > cap); NameToken('amicale', DF=65,224 > cap); NameToken('sas', DF=200,604 > cap); Prefix3('dun', DF=10,442 > cap); Prefix4('dunk', DF=10,125 > cap); AddrToken('dunkerque', DF=93,766 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-445315328",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('club', DF=99,522 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-5308195",
+          "target_id": "S3-98955464",
+          "s1_name": "nantes pharmacie",
+          "target_name": "nantes pharmacie",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('pharmacie', DF=26,030 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-728907172",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('club', DF=99,522 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-547411321",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "experimental_reason": "NameToken('lille', DF=21,512 > cap); NameToken('club', DF=99,522 > cap); Prefix3('lil', DF=20,648 > cap); Prefix4('lill', DF=20,251 > cap); AddrToken('saint', DF=113,612 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-562559718",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('club', DF=99,522 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-228177533",
+          "target_id": "S3-392088148",
+          "s1_name": "lille centre sarl",
+          "target_name": "lille centre sarl",
+          "experimental_reason": "NameToken('lille', DF=21,512 > cap); NameToken('centre', DF=45,675 > cap); NameToken('sarl', DF=285,190 > cap); Prefix3('lil', DF=20,648 > cap); Prefix4('lill', DF=20,251 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-637270286",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "experimental_reason": "NameToken('lille', DF=21,512 > cap); NameToken('club', DF=99,522 > cap); Prefix3('lil', DF=20,648 > cap); Prefix4('lill', DF=20,251 > cap); AddrToken('saint', DF=113,612 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-78965932",
+          "target_id": "S2-685783921",
+          "s1_name": "nantes amicale sas",
+          "target_name": "nantes amicale sas",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('amicale', DF=65,224 > cap); NameToken('sas', DF=200,604 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-16571726",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('club', DF=99,522 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-644418417",
+          "target_id": "S2-220386352",
+          "s1_name": "nantes ecole sas",
+          "target_name": "nantes ecole sas",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('ecole', DF=47,809 > cap); NameToken('sas', DF=200,604 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-312627881",
+          "target_id": "S2-87766151",
+          "s1_name": "dunkerque pharmacie sas",
+          "target_name": "dunkerque pharmacie sas",
+          "experimental_reason": "NameToken('dunkerque', DF=10,838 > cap); NameToken('pharmacie', DF=26,030 > cap); NameToken('sas', DF=200,604 > cap); Prefix3('dun', DF=10,442 > cap); Prefix4('dunk', DF=10,125 > cap); AddrToken('dunkerque', DF=93,766 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-862556918",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('club', DF=99,522 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        }
+      ]
+    },
+    "E3": {
+      "lost_count": 1134,
+      "sample_details": [
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-13893169",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "experimental_reason": "NameToken('lille', DF=21,512 > cap); NameToken('club', DF=99,522 > cap); Prefix3('lil', DF=20,648 > cap); Prefix4('lill', DF=20,251 > cap); AddrToken('saint', DF=113,612 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-13451015",
+          "target_id": "S2-911828148",
+          "s1_name": "bordeaux primaire sarl",
+          "target_name": "bordeaux primaire sarl",
+          "experimental_reason": "NameToken('bordeaux', DF=26,232 > cap); NameToken('primaire', DF=28,053 > cap); NameToken('sarl', DF=285,190 > cap); Prefix3('bor', DF=25,045 > cap); Prefix4('bord', DF=24,906 > cap); AddrToken('bordeaux', DF=233,153 > cap); AddrToken('nouvelle', DF=157,475 > cap); AddrToken('aquitaine', DF=157,166 > cap)"
+        },
+        {
+          "s1_id": "S1-807531920",
+          "target_id": "S3-259994051",
+          "s1_name": "roubaix parents eurl",
+          "target_name": "roubaix parents eurl",
+          "experimental_reason": "NameToken('parents', DF=23,249 > cap); NameToken('eurl', DF=83,815 > cap); AddrToken('roubaix', DF=89,229 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-388507164",
+          "target_id": "S3-197821852",
+          "s1_name": "bordeaux foyer sas",
+          "target_name": "bordeaux foyer sas",
+          "experimental_reason": "NameToken('bordeaux', DF=26,232 > cap); NameToken('sas', DF=200,604 > cap); Prefix3('bor', DF=25,045 > cap); Prefix4('bord', DF=24,906 > cap); AddrToken('all\u00e9e', DF=23,581 > cap); AddrToken('bordeaux', DF=233,153 > cap); AddrToken('nouvelle', DF=157,475 > cap); AddrToken('aquitaine', DF=157,166 > cap)"
+        },
+        {
+          "s1_id": "S1-419929302",
+          "target_id": "S2-880751421",
+          "s1_name": "lille sportive sarl",
+          "target_name": "lille sportive sarl",
+          "experimental_reason": "NameToken('lille', DF=21,512 > cap); NameToken('sportive', DF=35,427 > cap); NameToken('sarl', DF=285,190 > cap); Prefix3('lil', DF=20,648 > cap); Prefix4('lill', DF=20,251 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-817548736",
+          "target_id": "S3-659080890",
+          "s1_name": "saint herblain club sas",
+          "target_name": "saint herblain club sas",
+          "experimental_reason": "NameToken('saint', DF=26,284 > cap); NameToken('club', DF=99,522 > cap); NameToken('sas', DF=200,604 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap); AddrToken('saint', DF=113,612 > cap); AddrToken('herblain', DF=37,782 > cap)"
+        },
+        {
+          "s1_id": "S1-827961773",
+          "target_id": "S3-885169937",
+          "s1_name": "the ecole sarl",
+          "target_name": "the ecole sarl",
+          "experimental_reason": "NameToken('ecole', DF=47,809 > cap); NameToken('sarl', DF=285,190 > cap); AddrToken('pessac', DF=68,822 > cap); AddrToken('nouvelle', DF=157,475 > cap); AddrToken('aquitaine', DF=157,166 > cap)"
+        },
+        {
+          "s1_id": "S1-644418417",
+          "target_id": "S2-538724715",
+          "s1_name": "nantes ecole sas",
+          "target_name": "nantes ecole sas",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('ecole', DF=47,809 > cap); NameToken('sas', DF=200,604 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-556348793",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('club', DF=99,522 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-827961773",
+          "target_id": "S3-998748853",
+          "s1_name": "the ecole sarl",
+          "target_name": "the ecole sarl",
+          "experimental_reason": "NameToken('ecole', DF=47,809 > cap); NameToken('sarl', DF=285,190 > cap); AddrToken('pessac', DF=68,822 > cap); AddrToken('nouvelle', DF=157,475 > cap); AddrToken('aquitaine', DF=157,166 > cap)"
+        },
+        {
+          "s1_id": "S1-817548736",
+          "target_id": "S2-828713768",
+          "s1_name": "saint herblain club sas",
+          "target_name": "saint herblain club sas",
+          "experimental_reason": "NameToken('saint', DF=26,284 > cap); NameToken('club', DF=99,522 > cap); NameToken('sas', DF=200,604 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap); AddrToken('saint', DF=113,612 > cap); AddrToken('herblain', DF=37,782 > cap)"
+        },
+        {
+          "s1_id": "S1-566540458",
+          "target_id": "S2-500325520",
+          "s1_name": "nantes societe sarl",
+          "target_name": "nantes societe sarl",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('sarl', DF=285,190 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-644418417",
+          "target_id": "S3-646309803",
+          "s1_name": "nantes ecole sas",
+          "target_name": "nantes ecole sas",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('ecole', DF=47,809 > cap); NameToken('sas', DF=200,604 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-470791690",
+          "target_id": "S3-569403608",
+          "s1_name": "enseignement fils sarl",
+          "target_name": "enseignement fils sarl",
+          "experimental_reason": "NameToken('fils', DF=41,488 > cap); NameToken('sarl', DF=285,190 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-383508132",
+          "target_id": "S2-45301433",
+          "s1_name": "developpement ecole france eurl",
+          "target_name": "developpement ecole france eurl",
+          "experimental_reason": "NameToken('ecole', DF=47,809 > cap); NameToken('france', DF=136,550 > cap); NameToken('eurl', DF=83,815 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-155512047",
+          "target_id": "S2-873295227",
+          "s1_name": "dunkerque amicale sas",
+          "target_name": "dunkerque amicale sas",
+          "experimental_reason": "NameToken('amicale', DF=65,224 > cap); NameToken('sas', DF=200,604 > cap); AddrToken('dunkerque', DF=93,766 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-155512047",
+          "target_id": "S3-795234301",
+          "s1_name": "dunkerque amicale sas",
+          "target_name": "dunkerque amicale sas",
+          "experimental_reason": "NameToken('amicale', DF=65,224 > cap); NameToken('sas', DF=200,604 > cap); AddrToken('dunkerque', DF=93,766 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-299995446",
+          "target_id": "S3-423687026",
+          "s1_name": "la baule escoublac ecole",
+          "target_name": "la baule escoublac ecole",
+          "experimental_reason": "NameToken('la', DF=26,934 > cap); NameToken('ecole', DF=47,809 > cap); AddrToken('baule', DF=37,250 > cap); AddrToken('escoublac', DF=37,244 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-5308195",
+          "target_id": "S2-898939204",
+          "s1_name": "nantes pharmacie",
+          "target_name": "nantes pharmacie",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('pharmacie', DF=26,030 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-726138447",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('nantes', DF=22,761 > cap); NameToken('club', DF=99,522 > cap); Prefix3('nan', DF=21,654 > cap); Prefix4('nant', DF=21,591 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        }
+      ]
+    },
+    "E4": {
+      "lost_count": 498,
+      "sample_details": [
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-13893169",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "experimental_reason": "NameToken('club', DF=99,522 > cap); AddrToken('saint', DF=113,612 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-817548736",
+          "target_id": "S3-659080890",
+          "s1_name": "saint herblain club sas",
+          "target_name": "saint herblain club sas",
+          "experimental_reason": "NameToken('club', DF=99,522 > cap); NameToken('sas', DF=200,604 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap); AddrToken('saint', DF=113,612 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-556348793",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('club', DF=99,522 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-817548736",
+          "target_id": "S2-828713768",
+          "s1_name": "saint herblain club sas",
+          "target_name": "saint herblain club sas",
+          "experimental_reason": "NameToken('club', DF=99,522 > cap); NameToken('sas', DF=200,604 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap); AddrToken('saint', DF=113,612 > cap)"
+        },
+        {
+          "s1_id": "S1-644418417",
+          "target_id": "S3-646309803",
+          "s1_name": "nantes ecole sas",
+          "target_name": "nantes ecole sas",
+          "experimental_reason": "NameToken('sas', DF=200,604 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-155512047",
+          "target_id": "S2-873295227",
+          "s1_name": "dunkerque amicale sas",
+          "target_name": "dunkerque amicale sas",
+          "experimental_reason": "NameToken('amicale', DF=65,224 > cap); NameToken('sas', DF=200,604 > cap); AddrToken('dunkerque', DF=93,766 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-155512047",
+          "target_id": "S3-795234301",
+          "s1_name": "dunkerque amicale sas",
+          "target_name": "dunkerque amicale sas",
+          "experimental_reason": "NameToken('amicale', DF=65,224 > cap); NameToken('sas', DF=200,604 > cap); AddrToken('dunkerque', DF=93,766 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-726138447",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('club', DF=99,522 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-78965932",
+          "target_id": "S3-8259411",
+          "s1_name": "nantes amicale sas",
+          "target_name": "nantes amicale sas",
+          "experimental_reason": "NameToken('amicale', DF=65,224 > cap); NameToken('sas', DF=200,604 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-445315328",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('club', DF=99,522 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-817548736",
+          "target_id": "S2-626495739",
+          "s1_name": "saint herblain club sas",
+          "target_name": "saint herblain club sas",
+          "experimental_reason": "NameToken('club', DF=99,522 > cap); NameToken('sas', DF=200,604 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap); AddrToken('saint', DF=113,612 > cap)"
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-341483910",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "experimental_reason": "NameToken('club', DF=99,522 > cap); AddrToken('saint', DF=113,612 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-137685705",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('club', DF=99,522 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-964959625",
+          "target_id": "S3-356975623",
+          "s1_name": "lille amicale sci",
+          "target_name": "lille amicale sci",
+          "experimental_reason": "NameToken('amicale', DF=65,224 > cap); NameToken('sci', DF=55,270 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-943866501",
+          "target_id": "S3-642529401",
+          "s1_name": "aide club eurl",
+          "target_name": "aide club eurl",
+          "experimental_reason": "NameToken('club', DF=99,522 > cap); NameToken('eurl', DF=83,815 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-403395550",
+          "target_id": "S2-752919021",
+          "s1_name": "saint herblain amicale sarl",
+          "target_name": "saint herblain amicale sarl",
+          "experimental_reason": "NameToken('amicale', DF=65,224 > cap); NameToken('sarl', DF=285,190 > cap); AddrToken('saint', DF=113,612 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-728907172",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "experimental_reason": "NameToken('club', DF=99,522 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-78965932",
+          "target_id": "S2-525769609",
+          "s1_name": "nantes amicale sas",
+          "target_name": "nantes amicale sas",
+          "experimental_reason": "NameToken('amicale', DF=65,224 > cap); NameToken('sas', DF=200,604 > cap); AddrToken('nantes', DF=200,245 > cap); AddrToken('pays', DF=134,519 > cap); AddrToken('loire', DF=261,354 > cap)"
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-547411321",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "experimental_reason": "NameToken('club', DF=99,522 > cap); AddrToken('saint', DF=113,612 > cap); AddrToken('lille', DF=185,308 > cap); AddrToken('hauts', DF=187,928 > cap); AddrToken('france', DF=190,040 > cap)"
+        },
+        {
+          "s1_id": "S1-269743554",
+          "target_id": "S2-561401092",
+          "s1_name": "l\u00e8ge cap ferret club sasu",
+          "target_name": "l\u00e8ge cap ferret club sasu",
+          "experimental_reason": "NameToken('club', DF=99,522 > cap); NameToken('sasu', DF=62,893 > cap); AddrToken('nouvelle', DF=157,475 > cap); AddrToken('aquitaine', DF=157,166 > cap)"
+        }
+      ]
+    }
+  },
+  "labeled_validation": {
+    "E0": {
+      "config": "E0",
+      "label": "None (Production Baseline)",
+      "runtime_seconds": 23.591,
+      "raw_candidates": 1246018,
+      "raw_true_pairs_recovered": 0,
+      "raw_recall": 0.0,
+      "post_cap_candidates": 188491,
+      "post_cap_true_pairs_recovered": 1760,
+      "post_cap_recall": 0.989876,
+      "zero_candidate_s1_count": 0,
+      "total_sample_true_pairs": 1778
+    },
+    "E1": {
+      "config": "E1",
+      "label": "5,000",
+      "runtime_seconds": 24.861,
+      "raw_candidates": 1246018,
+      "raw_true_pairs_recovered": 0,
+      "raw_recall": 0.0,
+      "post_cap_candidates": 188491,
+      "post_cap_true_pairs_recovered": 1760,
+      "post_cap_recall": 0.989876,
+      "zero_candidate_s1_count": 0,
+      "total_sample_true_pairs": 1778
+    },
+    "E2": {
+      "config": "E2",
+      "label": "10,000",
+      "runtime_seconds": 24.807,
+      "raw_candidates": 1246018,
+      "raw_true_pairs_recovered": 0,
+      "raw_recall": 0.0,
+      "post_cap_candidates": 188491,
+      "post_cap_true_pairs_recovered": 1760,
+      "post_cap_recall": 0.989876,
+      "zero_candidate_s1_count": 0,
+      "total_sample_true_pairs": 1778
+    },
+    "E3": {
+      "config": "E3",
+      "label": "20,000",
+      "runtime_seconds": 23.685,
+      "raw_candidates": 1246018,
+      "raw_true_pairs_recovered": 0,
+      "raw_recall": 0.0,
+      "post_cap_candidates": 188491,
+      "post_cap_true_pairs_recovered": 1760,
+      "post_cap_recall": 0.989876,
+      "zero_candidate_s1_count": 0,
+      "total_sample_true_pairs": 1778
+    },
+    "E4": {
+      "config": "E4",
+      "label": "50,000",
+      "runtime_seconds": 24.295,
+      "raw_candidates": 1246018,
+      "raw_true_pairs_recovered": 0,
+      "raw_recall": 0.0,
+      "post_cap_candidates": 188491,
+      "post_cap_true_pairs_recovered": 1760,
+      "post_cap_recall": 0.989876,
+      "zero_candidate_s1_count": 0,
+      "total_sample_true_pairs": 1778
+    }
+  }
+}

@@ -1,0 +1,4639 @@
+{
+  "benchmark_summary": {
+    "s1_count": 500,
+    "target_count": 1434993,
+    "candidate_cap": 400,
+    "config_fingerprint": "87f20ceeb84ccc6ea2d48678c7810ac5",
+    "reference_true_pairs": 4191,
+    "target_recall_threshold": 0.99
+  },
+  "configurations": {
+    "E7-0": {
+      "config": "E7-0",
+      "label": "50k Selective (No Fallback, E6-A equiv)",
+      "addr_df_cap": 50000,
+      "use_fallback": false,
+      "raw_candidates": 95603816,
+      "mean_raw_candidates": 191207.63,
+      "raw_true_pairs_captured": 4191,
+      "raw_recall": 1.0,
+      "post_cap_candidates": 200000,
+      "post_cap_true_pairs_recovered": 3470,
+      "post_cap_recall": 0.827965,
+      "zero_candidate_s1_count": 0,
+      "fallback_s1_count": 0,
+      "runtime_seconds": 159.99,
+      "throughput_s1_per_sec": 3.13,
+      "peak_rss_mb": 1483.9,
+      "candidate_reduction_pct": 55.9,
+      "runtime_reduction_pct": 31.55,
+      "true_pairs_lost_vs_control": 0,
+      "true_pairs_gained_vs_control": 0,
+      "recall_target_passed": false,
+      "status_flag": "RECALL TARGET FAILED"
+    },
+    "E7-A": {
+      "config": "E7-A",
+      "label": "50k Selective + Per-S1 Fallback",
+      "addr_df_cap": 50000,
+      "use_fallback": true,
+      "raw_candidates": 95603816,
+      "mean_raw_candidates": 191207.63,
+      "raw_true_pairs_captured": 4191,
+      "raw_recall": 1.0,
+      "post_cap_candidates": 200000,
+      "post_cap_true_pairs_recovered": 3470,
+      "post_cap_recall": 0.827965,
+      "zero_candidate_s1_count": 0,
+      "fallback_s1_count": 0,
+      "runtime_seconds": 173.97,
+      "throughput_s1_per_sec": 2.87,
+      "peak_rss_mb": 1505.1,
+      "candidate_reduction_pct": 55.9,
+      "runtime_reduction_pct": 25.57,
+      "true_pairs_lost_vs_control": 0,
+      "true_pairs_gained_vs_control": 0,
+      "recall_target_passed": false,
+      "status_flag": "RECALL TARGET FAILED"
+    },
+    "E7-B": {
+      "config": "E7-B",
+      "label": "100k Selective + Per-S1 Fallback",
+      "addr_df_cap": 100000,
+      "use_fallback": true,
+      "raw_candidates": 110311304,
+      "mean_raw_candidates": 220622.61,
+      "raw_true_pairs_captured": 4191,
+      "raw_recall": 1.0,
+      "post_cap_candidates": 200000,
+      "post_cap_true_pairs_recovered": 3470,
+      "post_cap_recall": 0.827965,
+      "zero_candidate_s1_count": 0,
+      "fallback_s1_count": 0,
+      "runtime_seconds": 184.61,
+      "throughput_s1_per_sec": 2.71,
+      "peak_rss_mb": 1501.7,
+      "candidate_reduction_pct": 49.12,
+      "runtime_reduction_pct": 21.02,
+      "true_pairs_lost_vs_control": 0,
+      "true_pairs_gained_vs_control": 0,
+      "recall_target_passed": false,
+      "status_flag": "RECALL TARGET FAILED"
+    },
+    "E7-C": {
+      "config": "E7-C",
+      "label": "150k Selective + Per-S1 Fallback",
+      "addr_df_cap": 150000,
+      "use_fallback": true,
+      "raw_candidates": 130783469,
+      "mean_raw_candidates": 261566.94,
+      "raw_true_pairs_captured": 4191,
+      "raw_recall": 1.0,
+      "post_cap_candidates": 200000,
+      "post_cap_true_pairs_recovered": 3470,
+      "post_cap_recall": 0.827965,
+      "zero_candidate_s1_count": 0,
+      "fallback_s1_count": 0,
+      "runtime_seconds": 204.37,
+      "throughput_s1_per_sec": 2.45,
+      "peak_rss_mb": 1511.6,
+      "candidate_reduction_pct": 39.68,
+      "runtime_reduction_pct": 12.56,
+      "true_pairs_lost_vs_control": 0,
+      "true_pairs_gained_vs_control": 0,
+      "recall_target_passed": false,
+      "status_flag": "RECALL TARGET FAILED"
+    },
+    "E7-D": {
+      "config": "E7-D",
+      "label": "200k Selective + Per-S1 Fallback",
+      "addr_df_cap": 200000,
+      "use_fallback": true,
+      "raw_candidates": 186764781,
+      "mean_raw_candidates": 373529.56,
+      "raw_true_pairs_captured": 4191,
+      "raw_recall": 1.0,
+      "post_cap_candidates": 200000,
+      "post_cap_true_pairs_recovered": 3470,
+      "post_cap_recall": 0.827965,
+      "zero_candidate_s1_count": 0,
+      "fallback_s1_count": 0,
+      "runtime_seconds": 252.39,
+      "throughput_s1_per_sec": 1.98,
+      "peak_rss_mb": 1458.9,
+      "candidate_reduction_pct": 13.86,
+      "runtime_reduction_pct": -7.98,
+      "true_pairs_lost_vs_control": 0,
+      "true_pairs_gained_vs_control": 0,
+      "recall_target_passed": false,
+      "status_flag": "RECALL TARGET FAILED"
+    }
+  },
+  "loss_analysis": {
+    "E7-0": {
+      "total_lost": 721,
+      "sample_details": [
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-722691025",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "loire atlantique 10 rue georges le mevel nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-26936583",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 69 boulevard eug\u00e8ne orieux nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-114291531",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 0082 rue francisco ferrer",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-922644992",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "17 bis rue g\u00e9n\u00e9ral le flo nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-695075838",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "55 rue de cronstadt lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-789581929",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "loire atlantique 8 r edgar degas nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-725183077",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "29 r theophile gautier m\u00e9rignac gironde",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-273087893",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "ave du s\u00e9quoia nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-833971821",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "25 rue de l esp\u00e9rance lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-960147296",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "934 avenue de dunkerque lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-16181684",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 22 rue stendhal nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-799619333",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 24 rue f\u00e9nelon",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-742238876",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "18 rue voltaire lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-48288397",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "22 rue raspail lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-896382490",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "3 bis bd de berlin maison des haubans nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-589776160",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "25 r paul griveaud nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-566367310",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "110 r naujac bordeaux",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-869866211",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "00186 bd victor huog lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-914604773",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "101 r jules guesde lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-636203012",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "10 r metzinger nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-374841353",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 39 rue nicolas leblanc",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-828044341",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "15 rue des aliisers nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-274262739",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "19 bis r deshoulirees nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-427128518",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "6 r tiriau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')",
+            "AddrToken('pays')",
+            "AddrToken('loire')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-975622856",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "no 10 r bernadette nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-201323701",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "13 r beauregard nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-193291802",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "155 rue d esquermes lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-822917058",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "144 rue abelard nord lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-11603991",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "rue g\u00e9n\u00e9ral le flo nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-746408060",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "2 rue de l abbaye nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-828261693",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "94 r de la marriere bp 51919 nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-649421279",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "7 r des sept maires charette nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-529921496",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "36 avenue du cap fr\u00e9hel nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-163336623",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "n 34 rue des trois mollettes lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-375883521",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "n 72 r jean bart lille hauts de france",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-64373534",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "9 av des coquelicots nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-279198007",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "188 ave gustave delory roubaix hauts de france",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-900553777",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "24 av gustave delory hauts de france roubaix",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-475474768",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "186 rue leon gambetta lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-886797565",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "168 rte de saint joseph loire atlantique nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-643081714",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "33 r g\u00e9n\u00e9ral de sonis nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-220512868",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "30 r saint eloi lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('saint')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-354939977",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "27 rue jean bart maison des associations lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-956858358",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "10 rue gabriel luneau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-632437737",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "158 rue anatole france lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-488821436",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "30 rte de saint herblain croix bonneau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-356222742",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "76 r du chevalier fran\u00e7ais lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-811847612",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "017 rue d allemagne nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-812025199",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 20 rue du port",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-728851996",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "no 14 rue de la bastille nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        }
+      ]
+    },
+    "E7-A": {
+      "total_lost": 721,
+      "sample_details": [
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-722691025",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "loire atlantique 10 rue georges le mevel nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-26936583",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 69 boulevard eug\u00e8ne orieux nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-114291531",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 0082 rue francisco ferrer",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-922644992",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "17 bis rue g\u00e9n\u00e9ral le flo nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-695075838",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "55 rue de cronstadt lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-789581929",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "loire atlantique 8 r edgar degas nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-725183077",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "29 r theophile gautier m\u00e9rignac gironde",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-273087893",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "ave du s\u00e9quoia nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-833971821",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "25 rue de l esp\u00e9rance lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-960147296",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "934 avenue de dunkerque lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-16181684",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 22 rue stendhal nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-799619333",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 24 rue f\u00e9nelon",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-742238876",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "18 rue voltaire lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-48288397",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "22 rue raspail lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-896382490",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "3 bis bd de berlin maison des haubans nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-589776160",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "25 r paul griveaud nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-566367310",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "110 r naujac bordeaux",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-869866211",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "00186 bd victor huog lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-914604773",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "101 r jules guesde lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-636203012",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "10 r metzinger nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-374841353",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 39 rue nicolas leblanc",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-828044341",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "15 rue des aliisers nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-274262739",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "19 bis r deshoulirees nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-427128518",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "6 r tiriau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')",
+            "AddrToken('pays')",
+            "AddrToken('loire')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-975622856",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "no 10 r bernadette nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-201323701",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "13 r beauregard nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-193291802",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "155 rue d esquermes lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-822917058",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "144 rue abelard nord lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-11603991",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "rue g\u00e9n\u00e9ral le flo nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-746408060",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "2 rue de l abbaye nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-828261693",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "94 r de la marriere bp 51919 nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-649421279",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "7 r des sept maires charette nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-529921496",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "36 avenue du cap fr\u00e9hel nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-163336623",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "n 34 rue des trois mollettes lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-375883521",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "n 72 r jean bart lille hauts de france",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-64373534",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "9 av des coquelicots nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-279198007",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "188 ave gustave delory roubaix hauts de france",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-900553777",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "24 av gustave delory hauts de france roubaix",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-475474768",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "186 rue leon gambetta lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-886797565",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "168 rte de saint joseph loire atlantique nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-643081714",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "33 r g\u00e9n\u00e9ral de sonis nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-220512868",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "30 r saint eloi lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('saint')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-354939977",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "27 rue jean bart maison des associations lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-956858358",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "10 rue gabriel luneau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-632437737",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "158 rue anatole france lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-488821436",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "30 rte de saint herblain croix bonneau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-356222742",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "76 r du chevalier fran\u00e7ais lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-811847612",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "017 rue d allemagne nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-812025199",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 20 rue du port",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-728851996",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "no 14 rue de la bastille nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        }
+      ]
+    },
+    "E7-B": {
+      "total_lost": 721,
+      "sample_details": [
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-722691025",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "loire atlantique 10 rue georges le mevel nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-26936583",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 69 boulevard eug\u00e8ne orieux nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-114291531",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 0082 rue francisco ferrer",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-922644992",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "17 bis rue g\u00e9n\u00e9ral le flo nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-695075838",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "55 rue de cronstadt lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-789581929",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "loire atlantique 8 r edgar degas nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-725183077",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "29 r theophile gautier m\u00e9rignac gironde",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-273087893",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "ave du s\u00e9quoia nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-833971821",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "25 rue de l esp\u00e9rance lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-960147296",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "934 avenue de dunkerque lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-16181684",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 22 rue stendhal nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-799619333",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 24 rue f\u00e9nelon",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-742238876",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "18 rue voltaire lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-48288397",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "22 rue raspail lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-896382490",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "3 bis bd de berlin maison des haubans nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-589776160",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "25 r paul griveaud nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-566367310",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "110 r naujac bordeaux",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-869866211",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "00186 bd victor huog lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-914604773",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "101 r jules guesde lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-636203012",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "10 r metzinger nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-374841353",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 39 rue nicolas leblanc",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-828044341",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "15 rue des aliisers nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-274262739",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "19 bis r deshoulirees nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-427128518",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "6 r tiriau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')",
+            "AddrToken('pays')",
+            "AddrToken('loire')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-975622856",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "no 10 r bernadette nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-201323701",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "13 r beauregard nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-193291802",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "155 rue d esquermes lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-822917058",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "144 rue abelard nord lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-11603991",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "rue g\u00e9n\u00e9ral le flo nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-746408060",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "2 rue de l abbaye nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-828261693",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "94 r de la marriere bp 51919 nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-649421279",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "7 r des sept maires charette nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-529921496",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "36 avenue du cap fr\u00e9hel nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-163336623",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "n 34 rue des trois mollettes lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-375883521",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "n 72 r jean bart lille hauts de france",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-64373534",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "9 av des coquelicots nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-279198007",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "188 ave gustave delory roubaix hauts de france",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-900553777",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "24 av gustave delory hauts de france roubaix",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-475474768",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "186 rue leon gambetta lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-886797565",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "168 rte de saint joseph loire atlantique nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-643081714",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "33 r g\u00e9n\u00e9ral de sonis nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-220512868",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "30 r saint eloi lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('saint')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-354939977",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "27 rue jean bart maison des associations lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-956858358",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "10 rue gabriel luneau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-632437737",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "158 rue anatole france lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-488821436",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "30 rte de saint herblain croix bonneau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-356222742",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "76 r du chevalier fran\u00e7ais lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-811847612",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "017 rue d allemagne nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-812025199",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 20 rue du port",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-728851996",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "no 14 rue de la bastille nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        }
+      ]
+    },
+    "E7-C": {
+      "total_lost": 721,
+      "sample_details": [
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-722691025",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "loire atlantique 10 rue georges le mevel nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-26936583",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 69 boulevard eug\u00e8ne orieux nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-114291531",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 0082 rue francisco ferrer",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-922644992",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "17 bis rue g\u00e9n\u00e9ral le flo nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-695075838",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "55 rue de cronstadt lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-789581929",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "loire atlantique 8 r edgar degas nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-725183077",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "29 r theophile gautier m\u00e9rignac gironde",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-273087893",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "ave du s\u00e9quoia nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-833971821",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "25 rue de l esp\u00e9rance lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-960147296",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "934 avenue de dunkerque lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-16181684",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 22 rue stendhal nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-799619333",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 24 rue f\u00e9nelon",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-742238876",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "18 rue voltaire lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-48288397",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "22 rue raspail lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-896382490",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "3 bis bd de berlin maison des haubans nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-589776160",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "25 r paul griveaud nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-566367310",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "110 r naujac bordeaux",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-869866211",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "00186 bd victor huog lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-914604773",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "101 r jules guesde lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-636203012",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "10 r metzinger nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-374841353",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 39 rue nicolas leblanc",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-828044341",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "15 rue des aliisers nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-274262739",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "19 bis r deshoulirees nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-427128518",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "6 r tiriau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')",
+            "AddrToken('pays')",
+            "AddrToken('loire')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-975622856",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "no 10 r bernadette nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-201323701",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "13 r beauregard nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-193291802",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "155 rue d esquermes lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-822917058",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "144 rue abelard nord lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-11603991",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "rue g\u00e9n\u00e9ral le flo nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-746408060",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "2 rue de l abbaye nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-828261693",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "94 r de la marriere bp 51919 nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-649421279",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "7 r des sept maires charette nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-529921496",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "36 avenue du cap fr\u00e9hel nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-163336623",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "n 34 rue des trois mollettes lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-375883521",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "n 72 r jean bart lille hauts de france",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-64373534",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "9 av des coquelicots nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-279198007",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "188 ave gustave delory roubaix hauts de france",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-900553777",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "24 av gustave delory hauts de france roubaix",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-475474768",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "186 rue leon gambetta lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-886797565",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "168 rte de saint joseph loire atlantique nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-643081714",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "33 r g\u00e9n\u00e9ral de sonis nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-220512868",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "30 r saint eloi lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('saint')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-354939977",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "27 rue jean bart maison des associations lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-956858358",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "10 rue gabriel luneau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-632437737",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "158 rue anatole france lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-488821436",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "30 rte de saint herblain croix bonneau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-356222742",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "76 r du chevalier fran\u00e7ais lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-811847612",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "017 rue d allemagne nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-812025199",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 20 rue du port",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-728851996",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "no 14 rue de la bastille nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        }
+      ]
+    },
+    "E7-D": {
+      "total_lost": 721,
+      "sample_details": [
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-722691025",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "loire atlantique 10 rue georges le mevel nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-26936583",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 69 boulevard eug\u00e8ne orieux nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-114291531",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 0082 rue francisco ferrer",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-922644992",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "17 bis rue g\u00e9n\u00e9ral le flo nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-695075838",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "55 rue de cronstadt lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-789581929",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "loire atlantique 8 r edgar degas nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-725183077",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "29 r theophile gautier m\u00e9rignac gironde",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-273087893",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "ave du s\u00e9quoia nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-833971821",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "25 rue de l esp\u00e9rance lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-960147296",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "934 avenue de dunkerque lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-16181684",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 22 rue stendhal nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-799619333",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 24 rue f\u00e9nelon",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-742238876",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "18 rue voltaire lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-48288397",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "22 rue raspail lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-896382490",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "3 bis bd de berlin maison des haubans nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-589776160",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "25 r paul griveaud nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-566367310",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "110 r naujac bordeaux",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-869866211",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "00186 bd victor huog lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-914604773",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "101 r jules guesde lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-636203012",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "10 r metzinger nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-374841353",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 39 rue nicolas leblanc",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-828044341",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "15 rue des aliisers nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-274262739",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "19 bis r deshoulirees nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-427128518",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "6 r tiriau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')",
+            "AddrToken('pays')",
+            "AddrToken('loire')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-975622856",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "no 10 r bernadette nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-201323701",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "13 r beauregard nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-193291802",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "155 rue d esquermes lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-822917058",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "144 rue abelard nord lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-11603991",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "rue g\u00e9n\u00e9ral le flo nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-746408060",
+          "source": "S2",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "2 rue de l abbaye nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-828261693",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "94 r de la marriere bp 51919 nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-649421279",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "7 r des sept maires charette nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-529921496",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "36 avenue du cap fr\u00e9hel nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-163336623",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "n 34 rue des trois mollettes lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-375883521",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "n 72 r jean bart lille hauts de france",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-64373534",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "9 av des coquelicots nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-279198007",
+          "source": "S3",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "188 ave gustave delory roubaix hauts de france",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-900553777",
+          "source": "S2",
+          "business_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "24 av gustave delory hauts de france roubaix",
+          "firing_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-475474768",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "186 rue leon gambetta lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-886797565",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "168 rte de saint joseph loire atlantique nantes",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-643081714",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "33 r g\u00e9n\u00e9ral de sonis nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-220512868",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "30 r saint eloi lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('saint')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-354939977",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "27 rue jean bart maison des associations lille hauts de france",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('hauts')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-956858358",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "10 rue gabriel luneau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-632437737",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "158 rue anatole france lille nord",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')",
+            "AddrToken('france')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-488821436",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "30 rte de saint herblain croix bonneau nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-356222742",
+          "source": "S3",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "76 r du chevalier fran\u00e7ais lille",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-811847612",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "017 rue d allemagne nantes pays de la loire",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('pays')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-812025199",
+          "source": "S2",
+          "business_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 20 rue du port",
+          "firing_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')",
+            "AddrToken('lille')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-728851996",
+          "source": "S3",
+          "business_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "no 14 rue de la bastille nantes loire atlantique",
+          "firing_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')",
+            "AddrToken('nantes')",
+            "AddrToken('loire')"
+          ],
+          "loss_stage": "CAP_DISPLACEMENT",
+          "reason": "Generated by Name/Prefix channels but displaced by 400-candidate cap ranking cutoff."
+        }
+      ]
+    }
+  }
+}

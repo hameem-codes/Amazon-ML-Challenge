@@ -1,0 +1,2157 @@
+{
+  "benchmark_summary": {
+    "s1_count": 500,
+    "target_count": 1434993,
+    "candidate_cap": 400,
+    "config_fingerprint": "87f20ceeb84ccc6ea2d48678c7810ac5",
+    "reference_true_pairs": 4191
+  },
+  "configurations": {
+    "E5-0": {
+      "config": "E5-0",
+      "addr_df_cap": null,
+      "label": "None (E0 Control)",
+      "runtime_seconds": 342.04,
+      "total_runtime_seconds": 342.07,
+      "peak_rss_mb": 1343.4,
+      "throughput_s1_per_sec": 1.46,
+      "raw_candidates": 216808077,
+      "mean_raw_candidates": 400.0,
+      "median_raw_candidates": 400.0,
+      "max_raw_candidates": 400,
+      "post_cap_candidates": 200000,
+      "mean_post_cap_candidates": 400.0,
+      "ground_truth_pairs": 4191,
+      "raw_true_pairs_recovered": 4191,
+      "raw_recall": 1.0,
+      "post_cap_true_pairs_recovered": 1984,
+      "post_cap_recall": 0.473395,
+      "zero_candidate_s1_count": 0,
+      "raw_candidate_reduction_pct": 0.0,
+      "runtime_reduction_pct": 0.0,
+      "e5_0_candidates_retained": 200000,
+      "e5_0_retention_pct": 100.0,
+      "true_pairs_lost_vs_e5_0": 0
+    },
+    "E5-A": {
+      "config": "E5-A",
+      "addr_df_cap": 20000,
+      "label": "20,000",
+      "runtime_seconds": 146.99,
+      "total_runtime_seconds": 147.09,
+      "peak_rss_mb": 1377.2,
+      "throughput_s1_per_sec": 3.4,
+      "raw_candidates": 92405730,
+      "mean_raw_candidates": 400.0,
+      "median_raw_candidates": 400.0,
+      "max_raw_candidates": 400,
+      "post_cap_candidates": 200000,
+      "mean_post_cap_candidates": 400.0,
+      "ground_truth_pairs": 4191,
+      "raw_true_pairs_recovered": 4191,
+      "raw_recall": 1.0,
+      "post_cap_true_pairs_recovered": 3461,
+      "post_cap_recall": 0.825817,
+      "zero_candidate_s1_count": 0,
+      "raw_candidate_reduction_pct": 57.38,
+      "runtime_reduction_pct": 57.03,
+      "e5_0_candidates_retained": 32859,
+      "e5_0_retention_pct": 16.43,
+      "true_pairs_lost_vs_e5_0": 164
+    },
+    "E5-B": {
+      "config": "E5-B",
+      "addr_df_cap": 50000,
+      "label": "50,000",
+      "runtime_seconds": 151.28,
+      "total_runtime_seconds": 151.38,
+      "peak_rss_mb": 1379.3,
+      "throughput_s1_per_sec": 3.31,
+      "raw_candidates": 95603816,
+      "mean_raw_candidates": 400.0,
+      "median_raw_candidates": 400.0,
+      "max_raw_candidates": 400,
+      "post_cap_candidates": 200000,
+      "mean_post_cap_candidates": 400.0,
+      "ground_truth_pairs": 4191,
+      "raw_true_pairs_recovered": 4191,
+      "raw_recall": 1.0,
+      "post_cap_true_pairs_recovered": 3458,
+      "post_cap_recall": 0.825101,
+      "zero_candidate_s1_count": 0,
+      "raw_candidate_reduction_pct": 55.9,
+      "runtime_reduction_pct": 55.77,
+      "e5_0_candidates_retained": 38176,
+      "e5_0_retention_pct": 19.09,
+      "true_pairs_lost_vs_e5_0": 164
+    },
+    "E5-C": {
+      "config": "E5-C",
+      "addr_df_cap": 100000,
+      "label": "100,000",
+      "runtime_seconds": 173.9,
+      "total_runtime_seconds": 174.02,
+      "peak_rss_mb": 1400.7,
+      "throughput_s1_per_sec": 2.88,
+      "raw_candidates": 110311304,
+      "mean_raw_candidates": 400.0,
+      "median_raw_candidates": 400.0,
+      "max_raw_candidates": 400,
+      "post_cap_candidates": 200000,
+      "mean_post_cap_candidates": 400.0,
+      "ground_truth_pairs": 4191,
+      "raw_true_pairs_recovered": 4191,
+      "raw_recall": 1.0,
+      "post_cap_true_pairs_recovered": 3438,
+      "post_cap_recall": 0.820329,
+      "zero_candidate_s1_count": 0,
+      "raw_candidate_reduction_pct": 49.12,
+      "runtime_reduction_pct": 49.16,
+      "e5_0_candidates_retained": 49189,
+      "e5_0_retention_pct": 24.59,
+      "true_pairs_lost_vs_e5_0": 165
+    },
+    "E5-D": {
+      "config": "E5-D",
+      "addr_df_cap": 150000,
+      "label": "150,000",
+      "runtime_seconds": 212.05,
+      "total_runtime_seconds": 212.14,
+      "peak_rss_mb": 1421.6,
+      "throughput_s1_per_sec": 2.36,
+      "raw_candidates": 130783469,
+      "mean_raw_candidates": 400.0,
+      "median_raw_candidates": 400.0,
+      "max_raw_candidates": 400,
+      "post_cap_candidates": 200000,
+      "mean_post_cap_candidates": 400.0,
+      "ground_truth_pairs": 4191,
+      "raw_true_pairs_recovered": 4191,
+      "raw_recall": 1.0,
+      "post_cap_true_pairs_recovered": 3370,
+      "post_cap_recall": 0.804104,
+      "zero_candidate_s1_count": 0,
+      "raw_candidate_reduction_pct": 39.68,
+      "runtime_reduction_pct": 38.0,
+      "e5_0_candidates_retained": 75994,
+      "e5_0_retention_pct": 38.0,
+      "true_pairs_lost_vs_e5_0": 90
+    },
+    "E5-E": {
+      "config": "E5-E",
+      "addr_df_cap": 200000,
+      "label": "200,000",
+      "runtime_seconds": 445.35,
+      "total_runtime_seconds": 445.49,
+      "peak_rss_mb": 1444.5,
+      "throughput_s1_per_sec": 1.12,
+      "raw_candidates": 186764781,
+      "mean_raw_candidates": 400.0,
+      "median_raw_candidates": 400.0,
+      "max_raw_candidates": 400,
+      "post_cap_candidates": 200000,
+      "mean_post_cap_candidates": 400.0,
+      "ground_truth_pairs": 4191,
+      "raw_true_pairs_recovered": 4191,
+      "raw_recall": 1.0,
+      "post_cap_true_pairs_recovered": 2407,
+      "post_cap_recall": 0.574326,
+      "zero_candidate_s1_count": 0,
+      "raw_candidate_reduction_pct": 13.86,
+      "runtime_reduction_pct": -30.2,
+      "e5_0_candidates_retained": 171980,
+      "e5_0_retention_pct": 85.99,
+      "true_pairs_lost_vs_e5_0": 11
+    }
+  },
+  "critical_loss_analysis": {
+    "E5-A": {
+      "lost_count": 164,
+      "sample_details": [
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-272468440",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 065 rue roland hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 20,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-49439402",
+          "s1_name": "maison de sant\u00e9 jean",
+          "target_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "21 rue henri barbusse pays de la loire saint nazaire",
+          "address_tokens_responsible": [
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)",
+            "'nantes' (DF=200,245)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'pays' (DF=134,519), 'loire' (DF=261,354), 'nantes' (DF=200,245) exceeded cap 20,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('jean'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-476732670",
+          "target_id": "S3-802907393",
+          "s1_name": "\u00e9cole maternelle jean",
+          "target_name": "\u00e9cole maternelle jean",
+          "s1_address": "6 rue paul nassivet nantes pays de la loire",
+          "target_address": "no 214 route de la c\u00f4te d amour saint nazaire pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('\u00e9cole')",
+            "NameToken('maternelle')",
+            "NameToken('jean')",
+            "Prefix3('\u00e9co')",
+            "Prefix4('\u00e9col')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 20,000. Pair WAS generated by NameToken('\u00e9cole'), NameToken('maternelle'), NameToken('jean'), Prefix3('\u00e9co'), Prefix4('\u00e9col') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-220174330",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "29 rue des friches nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 20,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-892742021",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "18 rue de cronstadt lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 20,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-102664601",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "22 rue raspail lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 20,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-445315328",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 4 avenue sagamore nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 20,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-16181684",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 22 rue stendhal nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 20,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-13893169",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "59 rue mass\u00e9na lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 20,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-48771697",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "59 rue mass\u00e9na lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 20,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-524042886",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "20 rue des bourderies nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 20,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-672377132",
+          "s1_name": "maison de sant\u00e9 jean",
+          "target_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "nantes loire atlantique 19 r marans",
+          "address_tokens_responsible": [
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)",
+            "'nantes' (DF=200,245)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'pays' (DF=134,519), 'loire' (DF=261,354), 'nantes' (DF=200,245) exceeded cap 20,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('jean'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-960147296",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "934 avenue de dunkerque lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 20,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-185411069",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "4 bis rue georges bizot nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 20,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-238197488",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "2 rue dupleix lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 20,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-322449152",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "61 rue de la perverie nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 20,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-233245121",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "n 11 rue le verrier lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 20,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-579021950",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 19 rue alert samain hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 20,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-875885050",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "4 r de la ville en bois nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 20,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-547411321",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "97 rue de l arbrisseau lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 20,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        }
+      ]
+    },
+    "E5-B": {
+      "lost_count": 164,
+      "sample_details": [
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-272468440",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 065 rue roland hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 50,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-49439402",
+          "s1_name": "maison de sant\u00e9 jean",
+          "target_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "21 rue henri barbusse pays de la loire saint nazaire",
+          "address_tokens_responsible": [
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)",
+            "'nantes' (DF=200,245)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'pays' (DF=134,519), 'loire' (DF=261,354), 'nantes' (DF=200,245) exceeded cap 50,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('jean'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-476732670",
+          "target_id": "S3-802907393",
+          "s1_name": "\u00e9cole maternelle jean",
+          "target_name": "\u00e9cole maternelle jean",
+          "s1_address": "6 rue paul nassivet nantes pays de la loire",
+          "target_address": "no 214 route de la c\u00f4te d amour saint nazaire pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('\u00e9cole')",
+            "NameToken('maternelle')",
+            "NameToken('jean')",
+            "Prefix3('\u00e9co')",
+            "Prefix4('\u00e9col')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 50,000. Pair WAS generated by NameToken('\u00e9cole'), NameToken('maternelle'), NameToken('jean'), Prefix3('\u00e9co'), Prefix4('\u00e9col') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-220174330",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "29 rue des friches nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 50,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-892742021",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "18 rue de cronstadt lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 50,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-102664601",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "22 rue raspail lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 50,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-445315328",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 4 avenue sagamore nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 50,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-16181684",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 22 rue stendhal nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 50,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-13893169",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "59 rue mass\u00e9na lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 50,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-48771697",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "59 rue mass\u00e9na lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 50,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-524042886",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "20 rue des bourderies nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 50,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-672377132",
+          "s1_name": "maison de sant\u00e9 jean",
+          "target_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "nantes loire atlantique 19 r marans",
+          "address_tokens_responsible": [
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)",
+            "'nantes' (DF=200,245)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'pays' (DF=134,519), 'loire' (DF=261,354), 'nantes' (DF=200,245) exceeded cap 50,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('jean'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-960147296",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "934 avenue de dunkerque lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 50,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-185411069",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "4 bis rue georges bizot nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 50,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-238197488",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "2 rue dupleix lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 50,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-322449152",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "61 rue de la perverie nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 50,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-233245121",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "n 11 rue le verrier lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 50,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-579021950",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 19 rue alert samain hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 50,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-875885050",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "4 r de la ville en bois nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 50,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-547411321",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "97 rue de l arbrisseau lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 50,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        }
+      ]
+    },
+    "E5-C": {
+      "lost_count": 165,
+      "sample_details": [
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-272468440",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 065 rue roland hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 100,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-49439402",
+          "s1_name": "maison de sant\u00e9 jean",
+          "target_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "21 rue henri barbusse pays de la loire saint nazaire",
+          "address_tokens_responsible": [
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)",
+            "'nantes' (DF=200,245)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'pays' (DF=134,519), 'loire' (DF=261,354), 'nantes' (DF=200,245) exceeded cap 100,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('jean'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-476732670",
+          "target_id": "S3-802907393",
+          "s1_name": "\u00e9cole maternelle jean",
+          "target_name": "\u00e9cole maternelle jean",
+          "s1_address": "6 rue paul nassivet nantes pays de la loire",
+          "target_address": "no 214 route de la c\u00f4te d amour saint nazaire pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('\u00e9cole')",
+            "NameToken('maternelle')",
+            "NameToken('jean')",
+            "Prefix3('\u00e9co')",
+            "Prefix4('\u00e9col')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 100,000. Pair WAS generated by NameToken('\u00e9cole'), NameToken('maternelle'), NameToken('jean'), Prefix3('\u00e9co'), Prefix4('\u00e9col') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-220174330",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "29 rue des friches nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 100,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-892742021",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "18 rue de cronstadt lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 100,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-102664601",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "22 rue raspail lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 100,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-445315328",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 4 avenue sagamore nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 100,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-16181684",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "n 22 rue stendhal nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 100,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-13893169",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "59 rue mass\u00e9na lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 100,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-48771697",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "59 rue mass\u00e9na lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 100,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-524042886",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "20 rue des bourderies nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 100,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-672377132",
+          "s1_name": "maison de sant\u00e9 jean",
+          "target_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "nantes loire atlantique 19 r marans",
+          "address_tokens_responsible": [
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)",
+            "'nantes' (DF=200,245)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'pays' (DF=134,519), 'loire' (DF=261,354), 'nantes' (DF=200,245) exceeded cap 100,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('jean'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-960147296",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "934 avenue de dunkerque lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 100,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-185411069",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "4 bis rue georges bizot nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 100,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-238197488",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "2 rue dupleix lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 100,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S3-322449152",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "61 rue de la perverie nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 100,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-233245121",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "n 11 rue le verrier lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 100,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-579021950",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 19 rue alert samain hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 100,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-202627015",
+          "target_id": "S2-875885050",
+          "s1_name": "nantes club",
+          "target_name": "nantes club",
+          "s1_address": "142 rue du perray nantes pays de la loire",
+          "target_address": "4 r de la ville en bois nantes pays de la loire",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'pays' (DF=134,519)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('nantes')",
+            "NameToken('club')",
+            "Prefix3('nan')",
+            "Prefix4('nant')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'pays' (DF=134,519), 'loire' (DF=261,354) exceeded cap 100,000. Pair WAS generated by NameToken('nantes'), NameToken('club'), Prefix3('nan'), Prefix4('nant') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-547411321",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "97 rue de l arbrisseau lille hauts de france",
+          "address_tokens_responsible": [
+            "'saint' (DF=113,612)",
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'saint' (DF=113,612), 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 100,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        }
+      ]
+    },
+    "E5-D": {
+      "lost_count": 90,
+      "sample_details": [
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-272468440",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 065 rue roland hauts de france",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-892742021",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "18 rue de cronstadt lille hauts de france",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-102664601",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "22 rue raspail lille hauts de france",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-13893169",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "59 rue mass\u00e9na lille hauts de france",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-48771697",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "59 rue mass\u00e9na lille hauts de france",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-672377132",
+          "s1_name": "maison de sant\u00e9 jean",
+          "target_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "nantes loire atlantique 19 r marans",
+          "address_tokens_responsible": [
+            "'loire' (DF=261,354)",
+            "'nantes' (DF=200,245)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'loire' (DF=261,354), 'nantes' (DF=200,245) exceeded cap 150,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('jean'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S2-960147296",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "934 avenue de dunkerque lille hauts de france",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-238197488",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "2 rue dupleix lille hauts de france",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-233245121",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "n 11 rue le verrier lille hauts de france",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-579021950",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille 19 rue alert samain hauts de france",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-547411321",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "97 rue de l arbrisseau lille hauts de france",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-262868613",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "23 r d anvers lille hauts de france",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-901870264",
+          "target_id": "S3-204306304",
+          "s1_name": "maison de sant\u00e9 francois",
+          "target_name": "maison de sant\u00e9 francois",
+          "s1_address": "22 rue l\u00e9o lagrange m\u00e9rignac nouvelle aquitaine",
+          "target_address": "10 r de b\u00e9ziers bordeaux nouvelle aquitaine",
+          "address_tokens_responsible": [
+            "'nouvelle' (DF=157,475)",
+            "'aquitaine' (DF=157,166)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('francois')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nouvelle' (DF=157,475), 'aquitaine' (DF=157,166) exceeded cap 150,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('francois'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-234070486",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "hauts de france lille 12 rue d holblch",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-533009596",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "58 r des hotensias lille hauts de france",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-116985424",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "lille hauts de france 2 r de la marbrerie",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-337636939",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "hauts de france 208bis rue des postes lille",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-495195217",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "8 rue gassendi lille hauts de france",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-475756218",
+          "target_id": "S3-155104514",
+          "s1_name": "lille club",
+          "target_name": "lille club",
+          "s1_address": "99 rue saint sauveur lille hauts de france",
+          "target_address": "no 41 r d amiens 59000 lille lille hauts de france",
+          "address_tokens_responsible": [
+            "'lille' (DF=185,308)",
+            "'hauts' (DF=187,928)",
+            "'france' (DF=190,040)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('lille')",
+            "NameToken('club')",
+            "Prefix3('lil')",
+            "Prefix4('lill')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'lille' (DF=185,308), 'hauts' (DF=187,928), 'france' (DF=190,040) exceeded cap 150,000. Pair WAS generated by NameToken('lille'), NameToken('club'), Prefix3('lil'), Prefix4('lill') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-476732670",
+          "target_id": "S3-874616004",
+          "s1_name": "\u00e9cole maternelle jean",
+          "target_name": "\u00e9cole maternelle jean",
+          "s1_address": "6 rue paul nassivet nantes pays de la loire",
+          "target_address": "8 rue maurice sibille nantes loire atlantique",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('\u00e9cole')",
+            "NameToken('maternelle')",
+            "NameToken('jean')",
+            "Prefix3('\u00e9co')",
+            "Prefix4('\u00e9col')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'loire' (DF=261,354) exceeded cap 150,000. Pair WAS generated by NameToken('\u00e9cole'), NameToken('maternelle'), NameToken('jean'), Prefix3('\u00e9co'), Prefix4('\u00e9col') but evidence score dropped, falling out of top 400."
+        }
+      ]
+    },
+    "E5-E": {
+      "lost_count": 11,
+      "sample_details": [
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-300074450",
+          "s1_name": "maison de sant\u00e9 jean",
+          "target_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "12 petit ch de la gaudini\u00e8re nantes loire atlantique",
+          "address_tokens_responsible": [
+            "'loire' (DF=261,354)",
+            "'nantes' (DF=200,245)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'loire' (DF=261,354), 'nantes' (DF=200,245) exceeded cap 200,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('jean'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-819153433",
+          "s1_name": "maison de sant\u00e9 jean",
+          "target_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "nantes loire atlantique 19 rue marans",
+          "address_tokens_responsible": [
+            "'loire' (DF=261,354)",
+            "'nantes' (DF=200,245)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'loire' (DF=261,354), 'nantes' (DF=200,245) exceeded cap 200,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('jean'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-232292038",
+          "s1_name": "maison de sant\u00e9 jean",
+          "target_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "6 r tiriau nantes loire atlantique",
+          "address_tokens_responsible": [
+            "'loire' (DF=261,354)",
+            "'nantes' (DF=200,245)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'loire' (DF=261,354), 'nantes' (DF=200,245) exceeded cap 200,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('jean'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-345501851",
+          "target_id": "S3-526884354",
+          "s1_name": "association du secondaire",
+          "target_name": "association du secondaire",
+          "s1_address": "nouvelle aquitaine 3 rue de campeyraut bordeaux",
+          "target_address": "3 rue de campeyrut bordeaux",
+          "address_tokens_responsible": [
+            "'bordeaux' (DF=233,153)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('association')",
+            "NameToken('du')",
+            "NameToken('secondaire')",
+            "Prefix3('ass')",
+            "Prefix4('asso')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'bordeaux' (DF=233,153) exceeded cap 200,000. Pair WAS generated by NameToken('association'), NameToken('du'), NameToken('secondaire'), Prefix3('ass'), Prefix4('asso') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-476732670",
+          "target_id": "S3-874616004",
+          "s1_name": "\u00e9cole maternelle jean",
+          "target_name": "\u00e9cole maternelle jean",
+          "s1_address": "6 rue paul nassivet nantes pays de la loire",
+          "target_address": "8 rue maurice sibille nantes loire atlantique",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('\u00e9cole')",
+            "NameToken('maternelle')",
+            "NameToken('jean')",
+            "Prefix3('\u00e9co')",
+            "Prefix4('\u00e9col')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'loire' (DF=261,354) exceeded cap 200,000. Pair WAS generated by NameToken('\u00e9cole'), NameToken('maternelle'), NameToken('jean'), Prefix3('\u00e9co'), Prefix4('\u00e9col') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-992163827",
+          "s1_name": "maison de sant\u00e9 jean",
+          "target_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "19 bis r g\u00e9n\u00e9ral de goyon nantes loire atlantique",
+          "address_tokens_responsible": [
+            "'loire' (DF=261,354)",
+            "'nantes' (DF=200,245)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'loire' (DF=261,354), 'nantes' (DF=200,245) exceeded cap 200,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('jean'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S3-399363194",
+          "s1_name": "maison de sant\u00e9 jean",
+          "target_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "015 r de la pavoti\u00e8re nantes loire atlantique",
+          "address_tokens_responsible": [
+            "'loire' (DF=261,354)",
+            "'nantes' (DF=200,245)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'loire' (DF=261,354), 'nantes' (DF=200,245) exceeded cap 200,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('jean'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-672377132",
+          "s1_name": "maison de sant\u00e9 jean",
+          "target_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "nantes loire atlantique 19 r marans",
+          "address_tokens_responsible": [
+            "'loire' (DF=261,354)",
+            "'nantes' (DF=200,245)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'loire' (DF=261,354), 'nantes' (DF=200,245) exceeded cap 200,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('jean'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-476732670",
+          "target_id": "S3-724176777",
+          "s1_name": "\u00e9cole maternelle jean",
+          "target_name": "\u00e9cole maternelle jean",
+          "s1_address": "6 rue paul nassivet nantes pays de la loire",
+          "target_address": "8 rue maurice sibille nantes loire atlantique",
+          "address_tokens_responsible": [
+            "'nantes' (DF=200,245)",
+            "'loire' (DF=261,354)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('\u00e9cole')",
+            "NameToken('maternelle')",
+            "NameToken('jean')",
+            "Prefix3('\u00e9co')",
+            "Prefix4('\u00e9col')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'nantes' (DF=200,245), 'loire' (DF=261,354) exceeded cap 200,000. Pair WAS generated by NameToken('\u00e9cole'), NameToken('maternelle'), NameToken('jean'), Prefix3('\u00e9co'), Prefix4('\u00e9col') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-335922295",
+          "target_id": "S3-878548584",
+          "s1_name": "union du juventus",
+          "target_name": "union du juventus",
+          "s1_address": "22 rue reniere bordeaux nouvelle aquitaine",
+          "target_address": "no 22 rue reiere bordeaux gironde",
+          "address_tokens_responsible": [
+            "'bordeaux' (DF=233,153)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('union')",
+            "NameToken('du')",
+            "NameToken('juventus')",
+            "Prefix3('uni')",
+            "Prefix4('unio')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'bordeaux' (DF=233,153) exceeded cap 200,000. Pair WAS generated by NameToken('union'), NameToken('du'), NameToken('juventus'), Prefix3('uni'), Prefix4('unio') but evidence score dropped, falling out of top 400."
+        },
+        {
+          "s1_id": "S1-516261021",
+          "target_id": "S2-858143327",
+          "s1_name": "maison de sant\u00e9 jean",
+          "target_name": "maison de sant\u00e9 jean",
+          "s1_address": "45 rue de takrouna pays de la loire nantes",
+          "target_address": "13 r du paraguay nantes loire atlantique",
+          "address_tokens_responsible": [
+            "'loire' (DF=261,354)",
+            "'nantes' (DF=200,245)"
+          ],
+          "recovered_by_unchanged_channels": [
+            "NameToken('maison')",
+            "NameToken('de')",
+            "NameToken('sant\u00e9')",
+            "NameToken('jean')",
+            "Prefix3('mai')",
+            "Prefix4('mais')"
+          ],
+          "survived_e5_0_cap": true,
+          "reason": "Address token(s) 'loire' (DF=261,354), 'nantes' (DF=200,245) exceeded cap 200,000. Pair WAS generated by NameToken('maison'), NameToken('de'), NameToken('sant\u00e9'), NameToken('jean'), Prefix3('mai'), Prefix4('mais') but evidence score dropped, falling out of top 400."
+        }
+      ]
+    }
+  }
+}

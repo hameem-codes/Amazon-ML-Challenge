@@ -1,0 +1,32 @@
+{
+  "e6_0": {
+    "raw_candidates": 216808077,
+    "post_cap_candidates": 200000,
+    "true_pairs_captured": 3470,
+    "post_cap_recall": 0.8279646862324027,
+    "runtime_s": 233.7359175682068
+  },
+  "e6_a": {
+    "raw_candidates": 95603816,
+    "post_cap_candidates": 200000,
+    "true_pairs_captured": 3470,
+    "post_cap_recall": 0.8279646862324027,
+    "runtime_s": 153.53772926330566
+  },
+  "production_baseline": {
+    "raw_candidates": 216808077,
+    "post_cap_candidates": 200000,
+    "true_pairs_captured": 1984,
+    "post_cap_recall": 0.4733953710331663,
+    "runtime_s": 230.29895424842834
+  },
+  "candidate_set_comparison": {
+    "overlap_count": 200000,
+    "overlap_pct": 100.0,
+    "xor_count": 0,
+    "unique_to_e6_0": 0,
+    "unique_to_e6_a": 0,
+    "true_pairs_lost_vs_e6_0": 0,
+    "true_pairs_gained_vs_e6_0": 0
+  }
+}

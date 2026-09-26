@@ -1,0 +1,23 @@
+{
+  "old_runtime_seconds": 21.612,
+  "opt_runtime_seconds": 9.195,
+  "speedup": 2.35,
+  "old_raw_candidates": 1246018,
+  "opt_raw_candidates": 1246018,
+  "old_raw_recall": 0.9994,
+  "opt_raw_recall": 0.9994,
+  "old_raw_true_pairs": 1777,
+  "opt_raw_true_pairs": 1777,
+  "old_post_cap_candidates": 188491,
+  "opt_post_cap_candidates": 188491,
+  "old_post_cap_recall": 0.9899,
+  "opt_post_cap_recall": 0.9899,
+  "old_post_cap_true_pairs": 1760,
+  "opt_post_cap_true_pairs": 1760,
+  "old_zero_candidate_s1": 0,
+  "opt_zero_candidate_s1": 0,
+  "candidate_set_equality": true,
+  "evidence_columns_equality": true,
+  "ordering_equality": true,
+  "total_true_pairs_in_sample": 1778
+}

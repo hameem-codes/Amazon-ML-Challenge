@@ -1,0 +1,52 @@
+=== PHASE 3B: REFINED BLOCKING STRATEGIES REPORT ===
+
+Sample Configuration:
+- Source 1 records tested: 500
+- Target S2 records: 10854 (10k background + 855 true matches)
+- Target S3 records: 10922 (10k background + 923 true matches)
+- Total Target pool (S2 + S3): 21776
+- Total Ground Truth Pairs: 1778 (S2: 855, S3: 923)
+
+--- 1. OVERALL COMBINED S2+S3 PERFORMANCE ---
+                                                       Strategy  Candidate Pairs Avg Candidates/S1  Median  Max True-Pair Recall  S1 >= 1 Cand  Zero-Cand S1
+                                          Exact Name (Baseline)              381              0.76       1    6           0.2075           265           235
+                          Selective Token (No generic suffixes)            79698            159.40      85  952           0.8453           499             1
+                            Rare Token (freq <= 1%, count<=217)            38559             77.12      65  379           0.8442           499             1
+                           Rare Token (freq <= 0.2%, count<=43)             8257             16.51      10   84           0.7132           426            74
+                               Token-Pair (Overlap >= 2 tokens)             2910              5.82       3  108           0.6760           436            64
+                 Filtered Char 3-gram (shared >= 3, freq <= 5%)           136845            273.69     186 1373           0.8971           500             0
+                 Filtered Char 3-gram (shared >= 4, freq <= 5%)            74485            148.97      97 1137           0.8802           498             2
+Multi-Key Union (Exact + SelTok + Rare1% + TokPair + FltNgram3)           167895            335.79     240 1373           0.9106           500             0
+         Compact Union (Exact + TokPair + Rare0.2% + FltNgram4)            76832            153.66     100 1137           0.9033           499             1
+
+--- 2. SEPARATE S2 AND S3 EVALUATION ---
+                     Strategy  Candidate Pairs Avg Candidates/S1  Median  Max True-Pair Recall  S1 >= 1 Cand  Zero-Cand S1
+         Source 2: Exact Name              169              0.34       0    3           0.1953           148           352
+    Source 2: Selective Token            38918             77.84      39  476           0.8421           496             4
+    Source 2: Rare Token (1%)            18870             37.74      30  186           0.8409           496             4
+         Source 2: Token Pair             1430              2.86       1   57           0.6842           366           134
+Source 2: Filtered N-gram (3)            65810            131.62      89  642           0.8819           500             0
+    Source 2: Multi-Key Union            81042            162.08     113  669           0.8971           500             0
+         Source 3: Exact Name              212              0.42       0    5           0.2189           169           331
+    Source 3: Selective Token            40780             81.56      45  482           0.8483           494             6
+    Source 3: Rare Token (1%)            20077             40.15      35  193           0.8472           493             7
+         Source 3: Token Pair             1480              2.96       1   51           0.6685           386           114
+Source 3: Filtered N-gram (3)            67834            135.67      94  589           0.9112           500             0
+    Source 3: Multi-Key Union            83662            167.32     121  675           0.9231           500             0
+
+--- KEY FINDINGS & STRATEGY ANALYSIS ---
+1. Selective Token Blocking:
+   - Filtering generic tokens (llc, inc, ltd, pvt, services, group, etc.) maintains high recall while substantially reducing noise.
+
+2. Rare-Token Blocking:
+   - Threshold 1 (<= 1% corpus frequency, count <= 217): Eliminates very common tokens.
+   - Threshold 2 (<= 0.2% corpus frequency, count <= 43): Filters down to highly distinctive tokens, keeping candidate volume lean.
+
+3. Token-Pair Blocking:
+   - Requiring entities to share 2 or more informative tokens drastically collapses candidate explosion, yielding very high precision candidates.
+
+4. Filtered Character N-gram Blocking:
+   - Eliminating high-frequency n-grams (top 5% document frequency) and requiring >=3 shared n-grams avoids the multi-million pair explosion seen in Phase 3A while capturing typo variations.
+
+5. Multi-Key Union:
+   - Unifying complementary blocking channels combines the high-recall robustness of n-grams/tokens with the high precision of token pairs and exact match, achieving top recall with a controlled candidate budget.

@@ -1,0 +1,107 @@
+
+================================================================================
+SOURCE 1
+================================================================================
+20 example records:
+
+   entity_id                            business_name                                                                                                          business_address country
+S1-925783039                      Orelee's Barbershop                                                                                    1795 Westchester Drive, High Point, NC      US
+S1-773889195                              Prime Money                                                                                           17560 Ellis Road, Tahlequah, OK      US
+S1-377745466                            B+ Retail Inc                                                                                       1712 Montebello Avenue, Phoenix, AZ      US
+S1-133037285                            Christ Chapel                                                                         2100 Cameron Drive, Unit APARTMENT G, Dundalk, MD      US
+S1-755362802                  Prabhav Business Center                                                                      797, Lake Town Block A, Kolkata, Howrah, West Bengal   India
+S1-851869949               Custom Wealth Services LLC                                                                                         OH, Columbus, 5559 Orville Avenue      US
+S1-785847572 Consulting Nyasa Nursing Private Limited 2505, Tower 1, Oakwood, Runwal Greens, Mulund Goreagon Link Road, Near Fortis Hospital, Bhandup West, Mumbai, Maharashtra   India
+ S1-27541239                        Nexus Anchor Rain                                                                              1111 Church Street, Unit 2007, Nashville, TN      US
+S1-629417405                        Moore Bitwise Inc                                                                                     337 Oakland Avenue, Michigan City, IN      US
+ S1-22305073               Dermatology Green Medicine                                                               294 Meadowcreek Drive, Unit Unit 2, Village Of Pewaukee, WI      US
+S1-504790211                       Crystal Lending PC                                                                                   11643 Prosperity Road, South Jordan, UT      US
+S1-564729135               Dream Construction Limited    H.No.16-11-23/37/A, 2Nd Floor, Flat No.207, Sagar Hotel Building, Opp.Rta Office, Mo, Osarambagh, Hyderabad, Telangana   India
+S1-236312382                      Kelly Advisory, Inc                                                                                                301 1st Street, Chokio, MN      US
+S1-865131206                                   Helios                                                                                        66 Edgewood Street, Bridgeport, CT      US
+S1-626914593                   Unified Choice Dynamix                                                              Unit BUILDING 3030, MD, 2701 Eastern Boulevard, Middle River      US
+S1-765734254               Health Fellowship Partners                                                                              601 Oleander Circle, Virginia Beach City, VA      US
+ S1-82053739         Smart Healthcare Private Limited                                                  303, 3Rd Floor Sakar 5 B/H Natraj Cinema Ashram Road, Ahmedabad, Gujarat   India
+S1-309349399                   Callicoat & Dailey Inc                                                                                        Charlotte, NC, 833 Reliance Street      US
+S1-221443075                            Iris Advisors                                      House No-777 Raghubir Bhawanmadan Pur Khadar Sarita Vihar, Delhi, South Delhi, Delhi   India
+S1-341506266        Secunderabad Park Private Limited     Secunderabad, Hyderabad, Plot No.53, Flat No.402, Sr Estate-I Rainbow Colony, Ammuguda, Sainikpuri, Telangana, # 53/1   India
+
+================================================================================
+SOURCE 2
+================================================================================
+20 example records:
+
+   entity_id                                                            business_name                                                                                          business_address country
+S2-166376419                                          राम मार्केटिंग प्राइवेट लिमिटेड                                                              KH NO. -570/13, NEW DELHI, WEST DELHI, Delhi   India
+S2-764573417                                             -- Holloway Peak Inc Seafood                                                                                 105 ELM ST, MORGANTON, NC      US
+S2-639257739                                                 आदित्य प्रॉपर्टीज एलएलपी                                                          G-3/571, GULMOHAR COLONY, BHOPAL, Madhya Pradesh   India
+S2-163963287                                                               Summit Inc                                                                     GREENSBORO, NC, 19 1/2 STARDUST TRAIL      US
+ S2-49942811                                             Delta Tetlecommunication Inc                                                                           914 PIERPONT AVE, CLEVELAND, OH      US
+S2-138046867                                                           Lee and Lawson                                                                   1702 Pine Avenue, CITY OF MENOMONIE, WI      US
+S2-584977605 SHIVSHAKTI VIDYALAYA VIDYALAYA OVERSEAS CORPORATION | www.shivshakti.com                                                                H.NO 204 C ROAD HOSHIARPUR, PUNJAB, Punjab   India
+S2-277444929                                               Shree Infracon Private Ltd                                63/2275/7, ALHIND TOWER, FIRST FLOOR, JAFFERKHAN COLONY, KOZHIKODE, Kerala   India
+S2-721031885                                             Chavira Platinum Chimera LLC                                                                        282 SAXONY DRIVE, FTT MITCHELL, KY      US
+S2-508602797                                 FOUNDATION EXCEL AGENCY PRIVATE  LIMITED                                                  HN 753 E-1, BHARAT NAGAR, 104/1/1 ERANDWANE, Maharashtra   India
+ S2-69394310                                                         heassociates.com                                                                          599 PEASE HILL ROAD, HORICON, NY      US
+S2-615967906                                         सन कंस्ट्रक्शंस प्राइवेट लिमिटेड 43 SUKH SAMRUDDHI, Maharashtra, PUNE REGION, PUNE, BUNGALOW NO. 5, S. NO. 5, VIDISHA SOCIETY, KARVE NAGAR   India
+S2-684635925                               Global Developers Medicals Private Limited             H.NO 008 GOVIND BUILDING OPP.HOTEL VRINDHAVAN AARAY ROAD GOREGAON (EAST), MUMBAI, Maharashtra   India
+S2-868087865                                             ASSET BUILDING COALITION LLC                                                                        8219 17RD STREET, LAKE STEVENS, WA      US
+S2-795141272                                        Olszewski Holding Company LLC LLC                                                                         218 SHOAL CREEK, WILLIAMSBURG, VA      US
+S2-414418413                                                         CANDY'S-SERVICES                                                                       313 FOXBOROUGH DRIVE, BRUNSWICK, OH      US
+S2-566688803                                                  रियल मॉडर्न फूड लिमिटेड                               SHP NO. G-4, PLOT NO. 19, SECTOR 42, NERUL, THANE, NAVI MUMBAI, Maharashtra   India
+S2-634015823                                             Crestline Crestline Clean LP                                                                              HIGHWAY 49, ASHLAND CITY, TN      US
+S2-378707035                                                                     Nion                                                                     7100 BRIGHAM ROAD, HENRICO COUNTY, VA      US
+S2-953098128                                             Keystone Odyssey Odyssey LLC                                                                     1418 MEADOWBROOK DR, JOHNSON CITY, TN      US
+
+--- 10 examples with missing business_address in SOURCE 2 ---
+   entity_id                       business_name business_address country
+S2-187379771       Guerra And Krueger Table, LLC              NaN      US
+S2-751730544                 L E Pierce Cal [PC]              NaN      US
+S2-162849450           Preferred Bay Montage Inc              NaN      US
+S2-616836723             DELONG STRATEGIC  READY              NaN      US
+ S2-39617527     Desert Vanguard ([Maintenance])              NaN      US
+S2-582984116                    Wildlife Sóciety              NaN      US
+S2-762023797                 Orellana Kensington              NaN      US
+S2-682660453                      rathi holdings              NaN   India
+S2-752363850                          Berry Saul              NaN      US
+ S2-14102665 Thrasher, Wanner 5tenson LLC Center              NaN      US
+
+================================================================================
+SOURCE 3
+================================================================================
+20 example records:
+
+   entity_id                               business_name                                                                               business_address country
+S3-202863386                          wilfordhancock.com                                                                    Mack Rd, Haltom City, Texas      US
+S3-859268022 International South Consultants Private Ltd                                                                                                  India
+ S3-22467283                 LLC Moncada Léarning Center                                                                5780 Fawn Ct, Fort Worth, Texas      US
+S3-671162755                              Moyna's Coffee                                                   1 Ivanhoe Ave, PO Box 6009, Cincinnati, Ohio      US
+S3-960981775                Pvt. EFS Print Ventures Ltd.    Door No 183, 41St Cross, 22Nd Main 9Th Block Jayanagar, Bengaluru Urban, Bangalore, ಕರ್ನಾಟಕ   India
+S3-578159284              LLC Hernandez Colonial Redwood                                      2260- Housecreek Trail, Unit 407, Raleigh, North Carolina      US
+S3-121412624               Classic Equity Partners Group                                           6885 Catalpa Bluff Ln, PO Box 5799, Dickinson, Texas      US
+S3-249416830              Ectolumdrex dba X+ Madison Inc                                                           S03575 Cty Tk M, Town Of Buffalo, WI      US
+S3-107644605                     Animal Hanisch Hospirlg                                              ##8 Willow Oak Lane, Fl. 0, Saint Louis, Missouri      US
+S3-160217003                               Gomez Optimal                                                              343 Hempstead 161, Hope, Arkansas      US
+S3-504183980            The Rapid  Learning Alliance LLC                                                    46 White Rock Dr, Hurricanne, West Virginia      US
+ S3-53737228                  Indian Care Public Limited    Raebareli, Rae Bareli, Raibareilly, UP, No #51 C/o Shiv Kumar Maurya S/o Ram Ausan Bastepur   India
+ S3-16693061                                       Béque                                                           189 Connmre Dr, Nashville, Tennessee      US
+S3-331103166                           #centraleducation                                                          1113 Ash Street, Carlsbad, New Mexico      US
+ S3-45067784         அரிஹந்த் Foundation Private Limited                         Saranampatti Roadvellakinar Post Coimbatore, Tamilnadu, Coimbatore, TN   India
+S3-118652570                         Wildlife Guild  LLC                                                        18900 Harl Weiller Road, Caldwell, Ohio      US
+ S3-90100170                          Cinder Charlton-PC                                                         0200 Washington Street, ALVO, Nebraska      US
+S3-476778426                              ZRO Trinity Co                                                             0315 Laramie St, Gillette, Wyoming      US
+S3-128062172           Bajaj Foundation  Private Limited Rajendra Nagar, Andhra Pradesh, 221, 2Nd Floor, 7-90/5, Hn 86 Gandipet Main Rd, K.v.rangareddy   India
+S3-171901473                           Estell's Creative                                            15380 Fillmore Street, Unit 1006, Goodyear, Arizona      US
+
+--- 10 examples with missing business_address in SOURCE 3 ---
+   entity_id                               business_name business_address country
+S3-859268022 International South Consultants Private Ltd              NaN   India
+ S3-92001570                          Davis  Acquisition              NaN      US
+S3-299576808     Morales, Godina & Pánkow Associates LLC              NaN      US
+S3-924073964               The Nancy Nancy Bunten Energy              NaN      US
+S3-588120445              Anand Agro Private Enterprises              NaN   India
+ S3-32634960           Shyam  Foundation Private Limited              NaN   India
+S3-509442398      New Delhi Techn0logies Private Limited              NaN   India
+S3-987949855                               Southern பவர்              NaN   India
+S3-301461097                         Al Macrktig Pvt Ltd              NaN   India
+S3-180062010                            Beus Inc. Center              NaN      US

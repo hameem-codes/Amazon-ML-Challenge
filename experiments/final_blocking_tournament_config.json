@@ -1,0 +1,30 @@
+{
+  "sample_size_s1": 10000,
+  "target_pool_size": 94553,
+  "ground_truth_pairs": 34752,
+  "candidate_cap": 400,
+  "blocking_config": {
+    "ngram_size": 3,
+    "ngram_doc_freq_cap": 0.05,
+    "min_shared_ngrams": 3,
+    "rare_token_freq_cap": 0.01,
+    "compact_rare_token_cap": 0.002,
+    "token_pair_min_informative": 2
+  },
+  "candidate_cap_config": {
+    "max_candidates_per_s1": 400,
+    "ranking_weights": {
+      "exact_name_weight": 1000,
+      "num_keys_weight": 100,
+      "shared_ngrams_weight": 10,
+      "token_pair_weight": 20,
+      "rare_token_weight": 15,
+      "selective_token_weight": 5
+    }
+  },
+  "results": {
+    "A": {
+      "candidates": 82518154,
+      "avg_s1": 8251.8154,
+      "median_s1": 8336.5,
+      "max_s1": 

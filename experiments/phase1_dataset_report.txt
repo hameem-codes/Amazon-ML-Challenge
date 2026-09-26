@@ -1,0 +1,259 @@
+=== PHASE 1: DATASET EXPLORATION ===
+
+--- Analyzing train_source1.tsv ---
+File name: train_source1.tsv
+Number of rows: 2206821
+Column names: ['entity_id', 'business_name', 'business_address', 'country']
+Data types:
+entity_id           str
+business_name       str
+business_address    str
+country             str
+dtype: object
+Number of missing values per column:
+entity_id           0
+business_name       0
+business_address    0
+country             0
+dtype: int64
+Number of unique entity_id values: 2206821
+Country value counts:
+country
+US       1323633
+India     883188
+Name: count, dtype: int64
+Sample of 5 records:
+      entity_id  ... country
+0  S1-925783039  ...      US
+1  S1-773889195  ...      US
+2  S1-377745466  ...      US
+3  S1-133037285  ...      US
+4  S1-755362802  ...   India
+
+[5 rows x 4 columns]
+
+Number of countries: 2
+Top 10 most frequent countries:
+country
+US       1323633
+India     883188
+Name: count, dtype: int64
+----------------------------------------
+
+--- Analyzing train_source2.tsv ---
+File name: train_source2.tsv
+Number of rows: 5034616
+Column names: ['entity_id', 'business_name', 'business_address', 'country']
+Data types:
+entity_id           str
+business_name       str
+business_address    str
+country             str
+dtype: object
+Number of missing values per column:
+entity_id                0
+business_name            2
+business_address    168967
+country                  0
+dtype: int64
+Number of unique entity_id values: 5034616
+Country value counts:
+country
+US       3016817
+India    2017799
+Name: count, dtype: int64
+Sample of 5 records:
+      entity_id  ... country
+0  S2-166376419  ...   India
+1  S2-764573417  ...      US
+2  S2-639257739  ...   India
+3  S2-163963287  ...      US
+4   S2-49942811  ...      US
+
+[5 rows x 4 columns]
+
+Number of countries: 2
+Top 10 most frequent countries:
+country
+US       3016817
+India    2017799
+Name: count, dtype: int64
+----------------------------------------
+
+--- Analyzing train_source3.tsv ---
+File name: train_source3.tsv
+Number of rows: 5285603
+Column names: ['entity_id', 'business_name', 'business_address', 'country']
+Data types:
+entity_id           str
+business_name       str
+business_address    str
+country             str
+dtype: object
+Number of missing values per column:
+entity_id                0
+business_name           13
+business_address    175916
+country                  0
+dtype: int64
+Number of unique entity_id values: 5285603
+Country value counts:
+country
+US       3170056
+India    2115547
+Name: count, dtype: int64
+Sample of 5 records:
+      entity_id  ... country
+0  S3-202863386  ...      US
+1  S3-859268022  ...   India
+2   S3-22467283  ...      US
+3  S3-671162755  ...      US
+4  S3-960981775  ...   India
+
+[5 rows x 4 columns]
+
+Number of countries: 2
+Top 10 most frequent countries:
+country
+US       3170056
+India    2115547
+Name: count, dtype: int64
+----------------------------------------
+
+--- Analyzing test_source1.tsv ---
+File name: test_source1.tsv
+Number of rows: 1732544
+Column names: ['entity_id', 'business_name', 'business_address', 'country']
+Data types:
+entity_id           str
+business_name       str
+business_address    str
+country             str
+dtype: object
+Number of missing values per column:
+entity_id           0
+business_name       0
+business_address    0
+country             0
+dtype: int64
+Number of unique entity_id values: 1732544
+Country value counts:
+country
+India     809986
+US        663106
+France    259452
+Name: count, dtype: int64
+Sample of 5 records:
+      entity_id  ... country
+0  S1-714132312  ...      US
+1  S1-106407869  ...      US
+2  S1-156285671  ...  France
+3  S1-689823050  ...   India
+4  S1-921369899  ...  France
+
+[5 rows x 4 columns]
+
+----------------------------------------
+
+--- Analyzing test_source2.tsv ---
+File name: test_source2.tsv
+Number of rows: 4887273
+Column names: ['entity_id', 'business_name', 'business_address', 'country']
+Data types:
+entity_id           str
+business_name       str
+business_address    str
+country             str
+dtype: object
+Number of missing values per column:
+entity_id                0
+business_name           46
+business_address    129408
+country                  0
+dtype: int64
+Number of unique entity_id values: 4887273
+Country value counts:
+country
+India     2312565
+US        1871330
+France     703378
+Name: count, dtype: int64
+Sample of 5 records:
+      entity_id  ... country
+0  S2-192345572  ...   India
+1  S2-566025912  ...  France
+2  S2-158121477  ...  France
+3   S2-89663826  ...      US
+4  S2-884102769  ...      US
+
+[5 rows x 4 columns]
+
+----------------------------------------
+
+--- Analyzing test_source3.tsv ---
+File name: test_source3.tsv
+Number of rows: 5082316
+Column names: ['entity_id', 'business_name', 'business_address', 'country']
+Data types:
+entity_id           str
+business_name       str
+business_address    str
+country             str
+dtype: object
+Number of missing values per column:
+entity_id                0
+business_name           59
+business_address    136098
+country                  0
+dtype: int64
+Number of unique entity_id values: 5082316
+Country value counts:
+country
+India     2405000
+US        1945701
+France     731615
+Name: count, dtype: int64
+Sample of 5 records:
+      entity_id  ... country
+0  S3-462677478  ...   India
+1  S3-374810425  ...   India
+2  S3-198586129  ...  France
+3   S3-10300249  ...   India
+4  S3-604980231  ...   India
+
+[5 rows x 4 columns]
+
+----------------------------------------
+
+--- Analyzing train_ground_truth.tsv ---
+Number of rows: 2206821
+Column names: ['source1_entity_id', 'matched_entity_ids']
+Number of missing values per column:
+source1_entity_id          0
+matched_entity_ids    123247
+dtype: int64
+Sample of 10 ground-truth rows:
+  source1_entity_id                                 matched_entity_ids
+0         S1-965667  S2-681193310,S2-743505751,S3-775321672,S3-1129...
+1       S1-55344266  S2-249013014,S2-197070651,S3-478195123,S3-3843...
+2      S1-343815751             S2-790675320,S2-479876582,S3-878454467
+3      S1-656753428              S2-153058913,S2-24659151,S3-679606215
+4      S1-102811957  S2-478959098,S2-553508714,S2-625774905,S3-7280...
+5       S1-18727616  S2-755677256,S3-187831601,S3-641489370,S3-4762...
+6      S1-318373630                          S2-660036492,S3-804600254
+7       S1-86989137                          S3-274817120,S3-312496301
+8       S1-29845983                          S2-648035184,S3-588502663
+9      S1-789009573              S2-383871912,S3-74481402,S3-576451439
+
+Number of Source 1 entities represented: 2206821
+Rows with empty matched_entity_ids: 123247
+Distribution of number of matched IDs per Source 1 entity:
+0 matches: 123247
+1 match: 119157
+2 matches: 375212
+3 matches: 530841
+4+ matches: 1058364
+Total number of Source 1 training entities: 2206821
+Percentage of Source 1 entities with zero matches: 5.58%
+Percentage with one match: 5.40%
+Percentage with multiple matches (2+): 89.02%

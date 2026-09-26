@@ -1,0 +1,7 @@
+{
+  "threshold": 0.91,
+  "metric": "macro_F0.5",
+  "validation_f0_5": 0.9863307828438874,
+  "config_fingerprint": "87f20ceeb84ccc6ea2d48678c7810ac5",
+  "pipeline_version": "5.0.0"
+}

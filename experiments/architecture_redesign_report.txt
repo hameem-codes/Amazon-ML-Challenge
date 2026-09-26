@@ -1,0 +1,43 @@
+=== PHASE 4: FULL ARCHITECTURE REDESIGN & ALIGNMENT REPORT ===
+
+1. FILES CREATED:
+- src/config.py: Centralized configuration parameters (seeds, thresholds, caps, weights) and MD5 configuration hashing for train/test drift detection.
+- src/candidate_safety.py: Evidence-based deterministic candidate ranking and safety cap per Source 1 entity (max_candidates_per_s1), reporting before/after recall.
+- src/split.py: Strict Source 1 entity-level train/validation splitting ensuring reference entity isolation and eliminating data leakage.
+- src/training_pairs.py: Training pair constructor preserving all surviving true positives and sampling hard negatives based on blocking evidence.
+- src/tfidf_model.py: Transductive unlabeled TF-IDF vectorizer fitting on the union of train and test names and addresses.
+- src/collision.py: Many-to-many collision diagnostic module analyzing multi-S1 associations per S2/S3 entity.
+- src/test_architecture.py: Comprehensive test suite for candidate capping, evidence retention, entity splitting, hard-negative sampling, TF-IDF, collisions, and config hashing.
+- experiments/phase4_architecture_audit.md: Full component-by-component architectural audit.
+- experiments/final_architecture.md: Comprehensive final architecture specification with Mermaid pipeline diagram.
+
+2. FILES MODIFIED:
+- src/blocking.py: Upgraded to ProductionBlockingEngine with inverted indexing across all 5 channels while preserving explicit per-channel evidence metadata (exact, token, rare, pair, ngram, shared_ngram_count, num_blocking_keys). Maintained backward-compatibility aliases.
+
+3. FILES RETAINED:
+- src/normalize.py: Conservative Unicode-safe normalizer (NFKC, casefold, punctuation handling preserving marks & digits).
+- src/features.py: 57-feature pairwise extractor across Groups A-G and TF-IDF.
+- src/build_features.py: Pairwise feature building pipeline and label attachment.
+- src/test_feature_sanity.py: 10/10 feature sanity edge case tests.
+- src/test_normalization.py: Normalization verification tests.
+- src/test_blocking_refined.py, src/test_blocking_scale.py, src/explore_dataset.py: Standalone benchmark/exploratory scripts.
+
+4. KEY ARCHITECTURAL CHANGES:
+- Blocking Evidence Retention: Rather than discarding which blocking channel generated a candidate, ProductionBlockingEngine retains exact channel bitflags for every pair, directly populating downstream feature columns and ranking weights.
+- Candidate Safety Cap: Enforces max_candidates_per_s1 by ranking overflowing candidates via multi-factor evidence score (exact match, key count, shared ngrams, token pairs) instead of random truncation.
+- Entity-Level Isolation: Guarantees that all candidate pairs for any given Source 1 entity ID remain exclusively within either the training split or the validation split.
+- Hard Negative Sampling: Prioritizes challenging non-matches surviving multi-key blocking, computing dynamic scale_pos_weight to balance learning.
+- Transductive Unlabeled TF-IDF: Fits vocabulary on the union of raw train and test text across all sources to eliminate out-of-vocabulary drift across country partitions (e.g. France).
+- Configuration Fingerprint: An MD5 hash of all operational parameters verifies pipeline consistency between training and test inference.
+
+5. VERIFICATION & TEST RESULTS:
+- python -m unittest discover -s src -p "test_*.py": 17/17 tests PASSED (including 7 architecture alignment tests and 10 feature sanity edge cases).
+- python src/test_normalization.py: 100% PASSED.
+- python -m compileall src: Clean compilation, 0 errors.
+
+6. UNRESOLVED ISSUES:
+- None. All components are aligned with the final specification.
+
+7. EXACT NEXT STEP:
+- STOP and await user instructions.
+- The next step will be PHASE 4B: XGBOOST PAIR CLASSIFIER (training pair generation, dynamic scale_pos_weight, entity-level validation split, F0.5 optimization, calibration diagnostics, and collision analysis).

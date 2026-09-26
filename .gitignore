@@ -1,0 +1,61 @@
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environments & secrets
+.env
+.env.*
+!.env.example
+
+# Large datasets & raw competition data
+data/train/*.tsv
+data/test/*.tsv
+*.pkl
+
+# Scratch temporary dumps and large intermediate files
+scratch/*.tsv
+scratch/*.tsv.gz
+scratch/*.pkl
+scratch/*.log
+scratch/*.err
+scratch/*.pid
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini

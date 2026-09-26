@@ -1,0 +1,63 @@
+=== TESTING BUSINESS NAMES ===
+RAW:        Orelee's Barbershop
+NORMALIZED: orelee s barbershop
+--------------------------------------------------
+RAW:        Custom Wealth Services LLC
+NORMALIZED: custom wealth services llc
+--------------------------------------------------
+RAW:        Consulting Nyasa Nursing Private Limited
+NORMALIZED: consulting nyasa nursing private limited
+--------------------------------------------------
+RAW:        राम मार्केटिंग प्राइवेट लिमिटेड
+NORMALIZED: राम मार्केटिंग प्राइवेट लिमिटेड
+--------------------------------------------------
+RAW:        आदित्य प्रॉपर्टीज एलएलपी
+NORMALIZED: आदित्य प्रॉपर्टीज एलएलपी
+--------------------------------------------------
+RAW:        SHIVSHAKTI VIDYALAYA VIDYALAYA OVERSEAS CORPORATION | www.shivshakti.com
+NORMALIZED: shivshakti vidyalaya vidyalaya overseas corporation www shivshakti com
+--------------------------------------------------
+RAW:        Olszewski Holding Company LLC LLC
+NORMALIZED: olszewski holding company llc llc
+--------------------------------------------------
+RAW:        CANDY'S-SERVICES
+NORMALIZED: candy s services
+--------------------------------------------------
+RAW:        heassociates.com
+NORMALIZED: heassociates com
+--------------------------------------------------
+RAW:        LLC Moncada Léarning Center
+NORMALIZED: llc moncada léarning center
+--------------------------------------------------
+RAW:        Ectolumdrex dba X+ Madison Inc
+NORMALIZED: ectolumdrex dba x madison inc
+--------------------------------------------------
+RAW:        அரிஹந்த் Foundation Private Limited
+NORMALIZED: அரிஹந்த் foundation private limited
+--------------------------------------------------
+RAW:        New Delhi Techn0logies Private Limited
+NORMALIZED: new delhi techn0logies private limited
+--------------------------------------------------
+
+=== TESTING BUSINESS ADDRESSES ===
+RAW:        1795 Westchester Drive, High Point, NC
+NORMALIZED: 1795 westchester drive high point nc
+--------------------------------------------------
+RAW:        KH NO. -570/13, NEW DELHI, WEST DELHI, Delhi
+NORMALIZED: kh no 570 13 new delhi west delhi delhi
+--------------------------------------------------
+RAW:        H.No.16-11-23/37/A, 2Nd Floor, Flat No.207, Sagar Hotel Building, Opp.Rta Office
+NORMALIZED: h no 16 11 23 37 a 2nd floor flat no 207 sagar hotel building opp rta office
+--------------------------------------------------
+RAW:        Door No 183, 41St Cross, 22Nd Main 9Th Block Jayanagar, Bengaluru Urban, Bangalore, ಕರ್ನಾಟಕ
+NORMALIZED: door no 183 41st cross 22nd main 9th block jayanagar bengaluru urban bangalore ಕರ್ನಾಟಕ
+--------------------------------------------------
+RAW:        None
+NORMALIZED: 
+--------------------------------------------------
+RAW:        nan
+NORMALIZED: 
+--------------------------------------------------
+RAW:        nan
+NORMALIZED: 
+--------------------------------------------------
